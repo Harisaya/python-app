@@ -85,6 +85,16 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <string>PushButton</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>40</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
