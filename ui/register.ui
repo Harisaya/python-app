@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>842</width>
+    <height>594</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>170</y>
+      <x>340</x>
+      <y>180</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -37,34 +37,11 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <string>Username</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>230</y>
-      <width>151</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: #f8f9fa; /* Màu nền */
-    border: 2px solid #ced4da; /* Viền */
-    border-radius: 5px;       /* Bo góc */
-    padding: 5px;             /* Khoảng cách bên trong */
-    font-size: 14px;          /* Cỡ chữ */
-    color: #495057;           /* Màu chữ */
-border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
-    outline: none;             /* Xóa viền mặc định */</string>
-    </property>
-    <property name="placeholderText">
-     <string>Password</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>330</y>
+      <x>340</x>
+      <y>320</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -89,13 +66,13 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>801</width>
-      <height>291</height>
+      <y>450</y>
+      <width>851</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #f8d6f7; /* Màu hồng nhạt */
+     <string notr="true">background-color: rgb(0, 0, 0); /* Màu hồng nhạt */
     margin: 0;               /* Loại bỏ khoảng cách mặc định */
     padding: 0;              /* Loại bỏ padding mặc định */
     font-family: Arial, sans-serif;</string>
@@ -108,13 +85,13 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>290</y>
-      <width>801</width>
-      <height>311</height>
+      <y>70</y>
+      <width>851</width>
+      <height>411</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 212, 212); /* Màu hồng nhạt */
+     <string notr="true">background-color: rgb(255, 255, 255);/* Màu hồng nhạt */
     margin: 0;               /* Loại bỏ khoảng cách mặc định */
     padding: 0;              /* Loại bỏ padding mặc định */
     font-family: Arial, sans-serif;</string>
@@ -122,20 +99,29 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="text">
      <string/>
     </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>270</y>
       <width>151</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Segoe MDL2 Assets</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(97, 52, 112);
 font-size: 14px; 
- border: 2px solid #ced4da;</string>
+</string>
     </property>
     <property name="text">
      <string>Forgot Your Password?</string>
@@ -144,11 +130,18 @@ font-size: 14px;
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>110</y>
+      <x>340</x>
+      <y>120</y>
       <width>141</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sitka Subheading</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">    font-size: 22px;          /* Kích thước chữ */
@@ -162,14 +155,14 @@ color: rgb(170, 0, 255);</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>380</y>
+      <x>350</x>
+      <y>370</y>
       <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(97, 52, 112);
+     <string notr="true">color: rgb(0, 0, 0);
 font-size: 14px; 
  border: 2px solid #ced4da;</string>
     </property>
@@ -180,7 +173,7 @@ font-size: 14px;
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>290</x>
+      <x>270</x>
       <y>460</y>
       <width>81</width>
       <height>21</height>
@@ -201,7 +194,7 @@ border-radius: 9px</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>380</x>
+      <x>360</x>
       <y>460</y>
       <width>81</width>
       <height>21</height>
@@ -222,7 +215,7 @@ border-radius: 9px</string>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>450</x>
       <y>460</y>
       <width>81</width>
       <height>21</height>
@@ -243,14 +236,14 @@ border-radius: 9px</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>420</y>
+      <x>360</x>
+      <y>410</y>
       <width>101</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(72, 72, 72);
+     <string notr="true">color: rgb(0, 0, 0);
 font-size: 14px; 
  border: 2px solid #ced4da;</string>
     </property>
@@ -261,8 +254,8 @@ font-size: 14px;
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>170</y>
+      <x>290</x>
+      <y>180</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -280,7 +273,7 @@ font-size: 14px;
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>290</x>
       <y>230</y>
       <width>31</width>
       <height>31</height>
@@ -293,49 +286,31 @@ font-size: 14px;
      <pixmap>../img/Screenshot 2025-01-12 190257.png</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>-40</x>
-      <y>170</y>
-      <width>311</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/Logo-Thephoneshop-e1691079705370-1024x786.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>120</y>
+      <x>320</x>
+      <y>0</y>
       <width>211</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font-size: 20px;          /* Kích thước chữ */
-    font-weight: Arial;</string>
+    font-weight: Arial;
+color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Hari Mobile Dealership</string>
+     <string>      Hari Shop Online</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>140</y>
-      <width>221</width>
-      <height>301</height>
+      <x>720</x>
+      <y>170</y>
+      <width>71</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -351,25 +326,251 @@ font-size: 14px;
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>30</y>
+      <x>230</x>
+      <y>40</y>
       <width>471</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Sitka</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
      <string notr="true">font-size: 25px;          /* Kích thước chữ */
     font-weight: Big;
-color:rgb(0, 85, 0)</string>
+color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
      <string>Welcome Back To My Dealer, Please Login!</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>230</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #f8f9fa; /* Màu nền */
+    border: 2px solid #ced4da; /* Viền */
+    border-radius: 5px;       /* Bo góc */
+    padding: 5px;             /* Khoảng cách bên trong */
+    font-size: 14px;          /* Cỡ chữ */
+    color: #495057;           /* Màu chữ */
+border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
+    outline: none;             /* Xóa viền mặc định */</string>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>851</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0); /* Màu hồng nhạt */
+    margin: 0;               /* Loại bỏ khoảng cách mặc định */
+    padding: 0;              /* Loại bỏ padding mặc định */
+    font-family: Arial, sans-serif;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>841</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;We Selling Alls Cheaps, Good Items You Need In The Future With The Top Safety Reputation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>120</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>illustration:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>330</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>310</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/Wave-Alpha-110-7370-1649899780.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>380</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/R8_Coupe_V10_performance-1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>310</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/images (1).jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>170</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/cut cat serhio 02-1813x1811-720x719.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/goc-may-tinh-dep_2.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>240</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/images (3).jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>380</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/xe-dien-m133-dtbike--56jpg.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_13</zorder>
    <zorder>label_3</zorder>
    <zorder>label_2</zorder>
    <zorder>lineEdit</zorder>
-   <zorder>lineEdit_2</zorder>
    <zorder>pushButton</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
@@ -380,17 +581,27 @@ color:rgb(0, 85, 0)</string>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
    <zorder>label</zorder>
    <zorder>label_11</zorder>
    <zorder>label_12</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_22</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>842</width>
      <height>22</height>
     </rect>
    </property>

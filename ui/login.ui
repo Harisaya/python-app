@@ -41,7 +41,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>330</y>
+      <y>320</y>
       <width>151</width>
       <height>41</height>
      </rect>
@@ -104,13 +104,14 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>270</y>
+      <y>260</y>
       <width>151</width>
       <height>51</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Segoe MDL2 Assets</family>
       <pointsize>-1</pointsize>
      </font>
     </property>
@@ -304,8 +305,8 @@ font-size: 14px;
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>120</y>
+      <x>320</x>
+      <y>0</y>
       <width>211</width>
       <height>41</height>
      </rect>
@@ -321,7 +322,7 @@ font-size: 14px;
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>580</x>
+      <x>600</x>
       <y>140</y>
       <width>221</width>
       <height>301</height>
