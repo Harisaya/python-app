@@ -17,8 +17,8 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>170</y>
+      <x>340</x>
+      <y>180</y>
       <width>151</width>
       <height>31</height>
      </rect>
@@ -40,9 +40,9 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>320</y>
-      <width>151</width>
+      <x>270</x>
+      <y>270</y>
+      <width>271</width>
       <height>41</height>
      </rect>
     </property>
@@ -59,20 +59,20 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
  </string>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string> Click Here To Create Account</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>-10</x>
+      <y>440</y>
       <width>851</width>
-      <height>291</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #f8d6f7; /* Màu hồng nhạt */
+     <string notr="true">background-color: rgb(0, 0, 0); /* Màu hồng nhạt */
     margin: 0;               /* Loại bỏ khoảng cách mặc định */
     padding: 0;              /* Loại bỏ padding mặc định */
     font-family: Arial, sans-serif;</string>
@@ -85,13 +85,13 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>290</y>
+      <y>60</y>
       <width>851</width>
-      <height>311</height>
+      <height>411</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(212, 212, 212); /* Màu hồng nhạt */
+     <string notr="true">background-color: rgb(255, 255, 255);/* Màu hồng nhạt */
     margin: 0;               /* Loại bỏ khoảng cách mặc định */
     padding: 0;              /* Loại bỏ padding mặc định */
     font-family: Arial, sans-serif;</string>
@@ -99,36 +99,15 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="text">
      <string/>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>260</y>
-      <width>151</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Segoe MDL2 Assets</family>
-      <pointsize>-1</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(97, 52, 112);
-font-size: 14px; 
-</string>
-    </property>
-    <property name="text">
-     <string>Forgot Your Password?</string>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>110</y>
+      <x>340</x>
+      <y>120</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -146,32 +125,14 @@ font-size: 14px;
 color: rgb(170, 0, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;User Login&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>380</y>
-      <width>121</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(97, 52, 112);
-font-size: 14px; 
- border: 2px solid #ced4da;</string>
-    </property>
-    <property name="text">
-     <string>Create A Account!</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;User Sign Up&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>460</y>
+      <x>280</x>
+      <y>360</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -191,8 +152,8 @@ border-radius: 9px</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>460</y>
+      <x>370</x>
+      <y>360</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -212,8 +173,8 @@ border-radius: 9px</string>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>460</y>
+      <x>460</x>
+      <y>360</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -233,26 +194,26 @@ border-radius: 9px</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>420</y>
+      <x>360</x>
+      <y>320</y>
       <width>101</width>
       <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(72, 72, 72);
+     <string notr="true">color: rgb(0, 0, 0);
 font-size: 14px; 
  border: 2px solid #ced4da;</string>
     </property>
     <property name="text">
-     <string>Or Login With:</string>
+     <string>Or Create By:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>170</y>
+      <x>290</x>
+      <y>180</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -270,7 +231,7 @@ font-size: 14px;
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>290</x>
       <y>230</y>
       <width>31</width>
       <height>31</height>
@@ -281,25 +242,6 @@ font-size: 14px;
     </property>
     <property name="pixmap">
      <pixmap>../img/Screenshot 2025-01-12 190257.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>-40</x>
-      <y>170</y>
-      <width>311</width>
-      <height>241</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/Logo-Thephoneshop-e1691079705370-1024x786.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -313,19 +255,20 @@ font-size: 14px;
     </property>
     <property name="styleSheet">
      <string notr="true">font-size: 20px;          /* Kích thước chữ */
-    font-weight: Arial;</string>
+    font-weight: Arial;
+color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Hari Mobile Dealership</string>
+     <string>      Hari Shop Online</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>140</y>
-      <width>221</width>
-      <height>301</height>
+      <x>490</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="text">
@@ -341,9 +284,9 @@ font-size: 14px;
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>50</y>
-      <width>471</width>
+      <x>170</x>
+      <y>30</y>
+      <width>551</width>
       <height>41</height>
      </rect>
     </property>
@@ -356,16 +299,16 @@ font-size: 14px;
     <property name="styleSheet">
      <string notr="true">font-size: 25px;          /* Kích thước chữ */
     font-weight: Big;
-color:rgb(0, 85, 0)</string>
+color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Welcome Back To My Dealer, Please Login!</string>
+     <string>Welcome, You Is A New! Please Sign Up To Check Apps!</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>340</x>
       <y>230</y>
       <width>151</width>
       <height>31</height>
@@ -385,24 +328,235 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <string>Password</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>851</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0); /* Màu hồng nhạt */
+    margin: 0;               /* Loại bỏ khoảng cách mặc định */
+    padding: 0;              /* Loại bỏ padding mặc định */
+    font-family: Arial, sans-serif;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>841</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;We Selling Alls Cheaps, Good Items You Need In The Future With The Top Safety Reputation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>440</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Nirmala UI</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="text">
+     <string>illustration:</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/Wave-Alpha-110-7370-1649899780.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/R8_Coupe_V10_performance-1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/images (1).jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/cut cat serhio 02-1813x1811-720x719.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/goc-may-tinh-dep_2.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/images (3).jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>480</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/xe-dien-m133-dtbike--56jpg.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>380</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>I agree to the terms of use</string>
+    </property>
+   </widget>
+   <zorder>label_13</zorder>
    <zorder>label_3</zorder>
    <zorder>label_2</zorder>
    <zorder>lineEdit</zorder>
    <zorder>pushButton</zorder>
-   <zorder>label_4</zorder>
    <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>pushButton_3</zorder>
    <zorder>pushButton_4</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
    <zorder>label</zorder>
    <zorder>label_11</zorder>
    <zorder>label_12</zorder>
    <zorder>lineEdit_2</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
+   <zorder>label_22</zorder>
+   <zorder>checkBox</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
