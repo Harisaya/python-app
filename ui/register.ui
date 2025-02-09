@@ -424,8 +424,8 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>330</y>
+      <x>560</x>
+      <y>300</y>
       <width>49</width>
       <height>16</height>
      </rect>

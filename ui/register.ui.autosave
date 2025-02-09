@@ -59,7 +59,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
  </string>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Click Here!</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
