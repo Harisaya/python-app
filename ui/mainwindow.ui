@@ -123,7 +123,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="pushButton_20">
@@ -845,10 +845,10 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>430</x>
         <y>280</y>
-        <width>91</width>
-        <height>91</height>
+        <width>101</width>
+        <height>101</height>
        </rect>
       </property>
       <property name="text">
@@ -930,7 +930,7 @@
        <bool>false</bool>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string/>
       </property>
       <property name="pixmap">
        <pixmap>../img/Screenshot 2025-02-09 134910.png</pixmap>
@@ -1604,6 +1604,25 @@
        <string>Mua ngay</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_50">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>670</y>
+        <width>941</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/Screenshot 2025-02-09 172159.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
      <zorder>label_15</zorder>
      <zorder>label_3</zorder>
      <zorder>label_4</zorder>
@@ -1641,6 +1660,7 @@
      <zorder>pushButton_14</zorder>
      <zorder>pushButton_24</zorder>
      <zorder>pushButton_25</zorder>
+     <zorder>label_50</zorder>
     </widget>
     <widget class="QWidget" name="page_3"/>
    </widget>
