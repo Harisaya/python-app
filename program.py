@@ -3,13 +3,13 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
 from PyQt6 import uic
-import sys
-from setup_db import *
+from database import *
 
 class MessageBox():
     def succes_box(self, message): 
         box = QMessageBox()
-        box.setWindowTitle("Succes")
+        box.setWindowTitle("Success")
+        box.setText(message)
         box.setIcon(QMessageBox.Icon.Information)
         box.exec()
     
@@ -43,32 +43,38 @@ class Login(QMainWindow):
             input.setEchoMode(QLineEdit.EchoMode.Password)
             button.setIcon(QIcon("img/eye-slash-solid.svg"))
 
-        def login(self):
-            msg = MessageBox()
-            email = self.email.text()
-            password = self.password.text()
+    def login(self):
+        msg = MessageBox()
+        email = self.email.text()
+        password = self.password.text()
 
-            if email = "":
-                msg.error_box("Email không được để trống")
-                self.email.setFocus()
-                return
-            
-            if password = "":
-                msg.error_box("Mật khẩu không được để trống")
-                self.password.setFocus()
-                return
-            
-            user = get_user_by_email_and_password(email, password)
-            if user is not None: 
-                msg.succes_box("Đăng nhập thành công")
-                self_show.home = Home(user_id):
-                self.home.show()
-                self.close()
+        if email == "":
+            msg.error_box("Email không được để trống")
+            self.email.setFocus()
+            return
+        
+        if password == "":
+            msg.error_box("Mật khẩu không được để trống")
+            self.password.setFocus()
+            return
+        
+        user = get_user_by_email_and_password(email, password)
+        if user is not None: 
+            msg.succes_box("Đăng nhập thành công")
+            self.show_home(user["id"])
+            return
+        
+        msg.error_box("Email hoặc mật khẩu không đúng")
 
-            def show_register(self):
-                self.register = Register()
-                self.register.show()
-                self.close()
+    def show_register(self):
+        self.register = Register()
+        self.register.show()
+        self.close()
+        
+    def show_home(self, user_id):
+        self.home = Home(user_id)
+        self.home.show()
+        self.close()
 
 class Register(QMainWindow):
     def __init__(self):
@@ -103,53 +109,67 @@ class Register(QMainWindow):
         password = self.password.text()
         confirm_password = self.confirm_password.text()
 
-        if name = "":
-                msg.error_box("Họ tên không được để trống")
-                self.name.setFocus()
-                return
+        if name == "":
+            msg.error_box("Họ tên không được để trống")
+            self.name.setFocus()
+            return
         
-        if email = "":
-                msg.error_box("Email không được để trống")
-                self.email.setFocus()
-                return
+        if email == "":
+            msg.error_box("Email không được để trống")
+            self.email.setFocus()
+            return
         
-        if password = "":
-                msg.error_box("Mật khẩu không được để trống")
-                self.password.setFocus()
-                return
+        if password == "":
+            msg.error_box("Mật khẩu không được để trống")
+            self.password.setFocus()
+            return
         
-        if confirm_password = "":
-                msg.error_box("Xác Nhận Mật khẩu không được để trống")
-                self.confirm_password.setFocus()
-                return
+        if confirm_password == "":
+            msg.error_box("Xác Nhận Mật khẩu không được để trống")
+            self.confirm_password.setFocus()
+            return
         
         if password != confirm_password:
-             msg.error_box("Mật khẩu không trùng khớp")
-             self.confirm_password.setText("")
-             self.password.setFocus()
-             return
-        
+            msg.error_box("Mật khẩu không trùng khớp")
+            self.confirm_password.setText("")
+            self.password.setFocus()
+            return
+    
         if not self.validate_email(email):
-             msg error_box("Email không hợp lệ")
-             self.email.setFocus()
-             return
+            msg.error_box("Email không hợp lệ")
+            self.email.setFocus()
+            return
         
         check_email = get_user_by_email(email)
         if check_email is not None:
-             msg.error_box("Email đã tồn tại")
-             return
+            msg.error_box("Email đã tồn tại")
+            return
         
         create_user(name,email,password)
         msg.succes_box("Đăng ký thành công")
         self.show_login()
 
     def validate_email(self,s):
-         idx_at = s.find('@')
-         if idx_at == -1:
-              return False
-         return '-' in s [idx_at+1:]
+        idx_at = s.find('@')
+        if idx_at == -1:
+            return False
+        return '-' in s [idx_at+1:]
     
     def show_login(self):
-         self.login = Login()
-         self.login.show()
-         self.close()
+        self.login = Login()
+        self.login.show()
+        self.close()
+
+class Home(QMainWindow):
+    def __init__(self, user_id):
+        super().__init__()
+        uic.loadUi("ui/home.ui", self)
+
+        self.user_id = user_id
+        
+
+if __name__ == "__main__":
+    app = QApplication([])
+    login = Login()
+    login.show()
+    app.exec()
