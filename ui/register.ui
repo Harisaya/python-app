@@ -332,9 +332,9 @@ color:rgb(255, 255, 255)</string>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>300</x>
       <y>40</y>
-      <width>471</width>
+      <width>261</width>
       <height>41</height>
      </rect>
     </property>
@@ -350,7 +350,7 @@ color:rgb(255, 255, 255)</string>
 color:rgb(255, 255, 255)</string>
     </property>
     <property name="text">
-     <string>Welcome Back To My Dealer, Please Login!</string>
+     <string>Welcome, Have a nice day!</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
@@ -405,7 +405,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;We Selling Alls Cheaps, Good Items You Need In The Future With The Top Safety Reputation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
@@ -567,46 +567,6 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_23">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>210</y>
-      <width>231</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>19</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>In here, we selling</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_24">
-    <property name="geometry">
-     <rect>
-      <x>590</x>
-      <y>210</y>
-      <width>231</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>19</pointsize>
-      <italic>true</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>all important items</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_26">
     <property name="geometry">
      <rect>
@@ -701,8 +661,6 @@ background-color: rgb(255, 193, 8)</string>
    <zorder>label_21</zorder>
    <zorder>label_22</zorder>
    <zorder>label_15</zorder>
-   <zorder>label_23</zorder>
-   <zorder>label_24</zorder>
    <zorder>label_26</zorder>
    <zorder>label_25</zorder>
    <zorder>pushButton_5</zorder>
