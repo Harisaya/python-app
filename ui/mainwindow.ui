@@ -111,8 +111,8 @@
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>-10</x>
-        <y>190</y>
+        <x>0</x>
+        <y>180</y>
         <width>941</width>
         <height>31</height>
        </rect>
@@ -128,7 +128,7 @@
        <string notr="true">background-color:rgb(236, 236, 236)</string>
       </property>
       <property name="text">
-       <string>                                Một Số Tin Đăng Dành Cho Bạn</string>
+       <string>                                    Một Số Tin Đăng Liên Quan</string>
       </property>
       <property name="textFormat">
        <enum>Qt::TextFormat::AutoText</enum>
@@ -138,7 +138,7 @@
       <property name="geometry">
        <rect>
         <x>320</x>
-        <y>400</y>
+        <y>380</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -160,9 +160,9 @@
      <widget class="QLabel" name="label_36">
       <property name="geometry">
        <rect>
-        <x>560</x>
-        <y>400</y>
-        <width>131</width>
+        <x>550</x>
+        <y>380</y>
+        <width>81</width>
         <height>31</height>
        </rect>
       </property>
@@ -184,7 +184,7 @@
       <property name="geometry">
        <rect>
         <x>320</x>
-        <y>240</y>
+        <y>220</y>
         <width>131</width>
         <height>141</height>
        </rect>
@@ -199,27 +199,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_8">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>140</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(250, 213, 0)</string>
-      </property>
-      <property name="text">
-       <string>Bấm vào đây</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_30">
       <property name="geometry">
        <rect>
         <x>740</x>
-        <y>370</y>
+        <y>350</y>
         <width>131</width>
         <height>41</height>
        </rect>
@@ -260,7 +244,7 @@
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>400</y>
+        <y>380</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -283,7 +267,7 @@
       <property name="geometry">
        <rect>
         <x>770</x>
-        <y>400</y>
+        <y>380</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -306,7 +290,7 @@
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>240</y>
+        <y>220</y>
         <width>121</width>
         <height>141</height>
        </rect>
@@ -347,7 +331,7 @@
       <property name="geometry">
        <rect>
         <x>320</x>
-        <y>240</y>
+        <y>220</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -366,7 +350,7 @@
       <property name="geometry">
        <rect>
         <x>530</x>
-        <y>240</y>
+        <y>220</y>
         <width>131</width>
         <height>141</height>
        </rect>
@@ -385,7 +369,7 @@
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>380</y>
+        <y>360</y>
         <width>101</width>
         <height>21</height>
        </rect>
@@ -400,29 +384,13 @@
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lionel Messi&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_11">
-      <property name="geometry">
-       <rect>
-        <x>630</x>
-        <y>140</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(250, 213, 0)</string>
-      </property>
-      <property name="text">
-       <string>Bấm vào đây</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_17">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>430</y>
+        <y>410</y>
         <width>941</width>
-        <height>171</height>
+        <height>161</height>
        </rect>
       </property>
       <property name="font">
@@ -446,7 +414,7 @@
       <property name="geometry">
        <rect>
         <x>320</x>
-        <y>370</y>
+        <y>350</y>
         <width>131</width>
         <height>51</height>
        </rect>
@@ -483,43 +451,11 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_10">
-      <property name="geometry">
-       <rect>
-        <x>370</x>
-        <y>140</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(250, 213, 0)</string>
-      </property>
-      <property name="text">
-       <string>Bấm vào đây</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_7">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>140</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color:rgb(250, 213, 0)</string>
-      </property>
-      <property name="text">
-       <string>Bấm vào đây</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_25">
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>240</y>
+        <y>220</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -559,9 +495,9 @@
      <widget class="QLabel" name="label_29">
       <property name="geometry">
        <rect>
-        <x>550</x>
-        <y>370</y>
-        <width>101</width>
+        <x>530</x>
+        <y>350</y>
+        <width>131</width>
         <height>41</height>
        </rect>
       </property>
@@ -572,14 +508,14 @@
        </font>
       </property>
       <property name="text">
-       <string>Phù Sa Núi Tị</string>
+       <string>Mười giờ kém bảy</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_24">
       <property name="geometry">
        <rect>
         <x>740</x>
-        <y>240</y>
+        <y>220</y>
         <width>131</width>
         <height>141</height>
        </rect>
@@ -616,13 +552,343 @@
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>570</y>
+        <width>941</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(236, 236, 236)</string>
+      </property>
+      <property name="text">
+       <string>                                Một Số Tin Đăng Dành Cho Bạn</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::TextFormat::AutoText</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>610</y>
+        <width>941</width>
+        <height>371</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/Screenshot 2025-02-09 134910.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>840</y>
+        <width>561</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Hari Shop - Chợ Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>870</y>
+        <width>871</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Hari Shop chính thức gia nhập thị trường Việt Nam vào đầu năm 2025, với mục đích tạo ra cho bạn một kênh rao vặt trung gian.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Kết nối người mua với người bán lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Đến nay, Hari Shop vẫn luôn tự hào là Website rao vặt được ưa chuộng hàng đầu Việt Nam.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Với Hari Shop, bạn có thể dễ dàng mua bán, trao đổi bất cứ một loại mặt hàng nào, dù đó là đồ cũ hay đồ mới với nhiều lĩnh vực.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>620</y>
+        <width>121</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/9d7c49d3b068e4ca9b89602eb732c104-2919791456432088214.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>770</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ip 14Promax 256gb đã &lt;/p&gt;&lt;p&gt;thay màn còn lại nguyên zin&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_61">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>820</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>10.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_62">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>620</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/a1ba9bcfae561b9734ea76bb43fc486b-2917703877376894148.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_63">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>770</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Audi A6 Model 2016 mẫu &lt;/p&gt;&lt;p&gt;mới Gen 3 full đồ chơi 100t&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>820</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>700.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_67">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>620</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/e6128b487665f00701afb4d48e92a0e0-2916848521968917259.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>770</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Vario 125 cuối 2023 &lt;/p&gt;&lt;p&gt;mới 99% bstp chính chủ&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>820</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>40.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>620</y>
+        <width>191</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/22386391099d7d52e767b268a71faccd-2920503881873202965.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>770</y>
+        <width>111</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;xe điện xmen &lt;/p&gt;&lt;p&gt;v5 nguyên bản&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_72">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>820</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>6.000.000 đ</string>
+      </property>
+     </widget>
+     <zorder>label_52</zorder>
      <zorder>label</zorder>
      <zorder>pushButton_20</zorder>
      <zorder>label_18</zorder>
      <zorder>label_33</zorder>
      <zorder>label_36</zorder>
      <zorder>label_21</zorder>
-     <zorder>pushButton_8</zorder>
      <zorder>label_30</zorder>
      <zorder>label_32</zorder>
      <zorder>label_35</zorder>
@@ -631,17 +897,29 @@
      <zorder>label_27</zorder>
      <zorder>label_23</zorder>
      <zorder>label_20</zorder>
-     <zorder>pushButton_11</zorder>
      <zorder>label_17</zorder>
      <zorder>label_22</zorder>
      <zorder>label_14</zorder>
-     <zorder>pushButton_10</zorder>
-     <zorder>pushButton_7</zorder>
      <zorder>label_25</zorder>
      <zorder>label_13</zorder>
      <zorder>label_29</zorder>
      <zorder>label_24</zorder>
      <zorder>label_16</zorder>
+     <zorder>label_47</zorder>
+     <zorder>label_54</zorder>
+     <zorder>label_55</zorder>
+     <zorder>label_56</zorder>
+     <zorder>label_59</zorder>
+     <zorder>label_61</zorder>
+     <zorder>label_62</zorder>
+     <zorder>label_63</zorder>
+     <zorder>label_64</zorder>
+     <zorder>label_67</zorder>
+     <zorder>label_68</zorder>
+     <zorder>label_69</zorder>
+     <zorder>label_70</zorder>
+     <zorder>label_71</zorder>
+     <zorder>label_72</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="label_3">
