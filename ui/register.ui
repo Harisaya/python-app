@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>170</y>
+      <y>180</y>
       <width>251</width>
       <height>41</height>
      </rect>
@@ -41,7 +41,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>310</y>
+      <y>320</y>
       <width>211</width>
       <height>41</height>
      </rect>
@@ -59,7 +59,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
  </string>
     </property>
     <property name="text">
-     <string>Press Here</string>
+     <string>Press Here </string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -68,7 +68,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
       <x>0</x>
       <y>90</y>
       <width>421</width>
-      <height>351</height>
+      <height>361</height>
      </rect>
     </property>
     <property name="font">
@@ -91,7 +91,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>100</y>
+      <y>110</y>
       <width>311</width>
       <height>51</height>
      </rect>
@@ -114,7 +114,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>470</y>
+      <y>480</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -135,7 +135,7 @@ border-radius: 9px</string>
     <property name="geometry">
      <rect>
       <x>170</x>
-      <y>470</y>
+      <y>480</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -156,7 +156,7 @@ border-radius: 9px</string>
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>470</y>
+      <y>480</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -177,7 +177,7 @@ border-radius: 9px</string>
     <property name="geometry">
      <rect>
       <x>110</x>
-      <y>380</y>
+      <y>400</y>
       <width>191</width>
       <height>31</height>
      </rect>
@@ -195,16 +195,16 @@ background-color:rgb(255, 255, 255)</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>100</x>
       <y>-10</y>
-      <width>211</width>
-      <height>61</height>
+      <width>221</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">font-size: 20px;          /* Kích thước chữ */
     font-weight: Arial;
-color:rgb(255, 255, 255)</string>
+color:rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string>      Hari Shop Online</string>
@@ -213,10 +213,10 @@ color:rgb(255, 255, 255)</string>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>301</width>
-      <height>41</height>
+      <x>40</x>
+      <y>50</y>
+      <width>341</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -228,17 +228,17 @@ color:rgb(255, 255, 255)</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font-size: 25px;          /* Kích thước chữ */
-color:rgb(255, 255, 255)</string>
+color:rgb(0, 0, 0)</string>
     </property>
     <property name="text">
-     <string>Welcome, Have a nice day!</string>
+     <string>-Welcome, Have a nice day !-</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>240</y>
+      <y>250</y>
       <width>251</width>
       <height>41</height>
      </rect>
@@ -267,7 +267,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 51, 127)</string>
+     <string notr="true">background-color: rgb(244, 244, 244)</string>
     </property>
     <property name="text">
      <string/>
@@ -290,7 +290,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>250</y>
+      <y>260</y>
       <width>21</width>
       <height>21</height>
      </rect>
@@ -309,7 +309,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>510</y>
+      <y>520</y>
       <width>191</width>
       <height>20</height>
      </rect>
@@ -335,7 +335,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>510</y>
+      <y>520</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -362,7 +362,7 @@ background-color: rgb(255, 190, 78)</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 51, 127);</string>
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string/>
@@ -387,6 +387,44 @@ background-color: rgb(255, 190, 78)</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>185</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/at-solid.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>250</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/key-solid.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>label_15</zorder>
    <zorder>label_13</zorder>
    <zorder>label_3</zorder>
@@ -405,6 +443,8 @@ background-color: rgb(255, 190, 78)</string>
    <zorder>label_25</zorder>
    <zorder>pushButton_5</zorder>
    <zorder>label_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_6</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
