@@ -33,7 +33,7 @@
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>370</x>
       <y>20</y>
       <width>491</width>
       <height>41</height>
@@ -52,7 +52,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>840</x>
+      <x>820</x>
       <y>20</y>
       <width>41</width>
       <height>41</height>
@@ -79,7 +79,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="pushButton_20">
@@ -222,9 +222,9 @@
       <property name="geometry">
        <rect>
         <x>490</x>
-        <y>40</y>
+        <y>30</y>
         <width>101</width>
-        <height>101</height>
+        <height>111</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -926,7 +926,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>30</y>
+        <y>40</y>
         <width>941</width>
         <height>851</height>
        </rect>
@@ -1168,7 +1168,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>460</y>
+        <y>540</y>
         <width>171</width>
         <height>51</height>
        </rect>
@@ -1186,8 +1186,8 @@
      <widget class="QLabel" name="label_43">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>460</y>
+        <x>220</x>
+        <y>550</y>
         <width>161</width>
         <height>51</height>
        </rect>
@@ -1252,7 +1252,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>510</y>
+        <y>590</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1293,8 +1293,8 @@
      <widget class="QLabel" name="label_28">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>340</y>
+        <x>10</x>
+        <y>420</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1312,8 +1312,8 @@
      <widget class="QLabel" name="label_48">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>510</y>
+        <x>240</x>
+        <y>590</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1335,8 +1335,8 @@
      <widget class="QLabel" name="label_49">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>340</y>
+        <x>220</x>
+        <y>420</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1355,9 +1355,9 @@
       <property name="geometry">
        <rect>
         <x>460</x>
-        <y>330</y>
-        <width>141</width>
-        <height>231</height>
+        <y>420</y>
+        <width>151</width>
+        <height>121</height>
        </rect>
       </property>
       <property name="text">
@@ -1374,7 +1374,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>340</y>
+        <y>420</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1392,8 +1392,8 @@
      <widget class="QLabel" name="label_57">
       <property name="geometry">
        <rect>
-        <x>660</x>
-        <y>460</y>
+        <x>670</x>
+        <y>540</y>
         <width>201</width>
         <height>51</height>
        </rect>
@@ -1431,7 +1431,7 @@
       <property name="geometry">
        <rect>
         <x>690</x>
-        <y>520</y>
+        <y>590</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -1477,7 +1477,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>340</y>
+        <y>420</y>
         <width>41</width>
         <height>21</height>
        </rect>
@@ -1490,123 +1490,6 @@
       </property>
       <property name="scaledContents">
        <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>310</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>540</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_9">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>100</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_13">
-      <property name="geometry">
-       <rect>
-        <x>490</x>
-        <y>90</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_19">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>90</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_22">
-      <property name="geometry">
-       <rect>
-        <x>490</x>
-        <y>620</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_14">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>540</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_24">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>90</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_25">
-      <property name="geometry">
-       <rect>
-        <x>720</x>
-        <y>550</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mua ngay</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_50">
@@ -1656,45 +1539,53 @@
      <zorder>label_65</zorder>
      <zorder>label_66</zorder>
      <zorder>label_31</zorder>
-     <zorder>pushButton_2</zorder>
-     <zorder>pushButton_6</zorder>
-     <zorder>pushButton_9</zorder>
-     <zorder>pushButton_13</zorder>
-     <zorder>pushButton_19</zorder>
-     <zorder>pushButton_22</zorder>
-     <zorder>pushButton_14</zorder>
-     <zorder>pushButton_24</zorder>
-     <zorder>pushButton_25</zorder>
      <zorder>label_50</zorder>
     </widget>
-    <widget class="QWidget" name="page_3"/>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>10</y>
-      <width>71</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"> border: 1px solid #rgb(0, 0, 0)</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/pngtree-flash-sale-creative-tag-elements-png-image_7262331.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>941</width>
+        <height>981</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/Screenshot 2025-02-09 134910.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>101</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/2829758.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>100</x>
       <y>20</y>
       <width>51</width>
       <height>51</height>
@@ -1713,7 +1604,7 @@
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>220</x>
+      <x>180</x>
       <y>20</y>
       <width>51</width>
       <height>51</height>
@@ -1732,7 +1623,7 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>20</x>
       <y>20</y>
       <width>51</width>
       <height>51</height>
@@ -1748,20 +1639,23 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_41">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>51</width>
-      <height>51</height>
+      <x>250</x>
+      <y>10</y>
+      <width>71</width>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> border: 1px solid #rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../img/list-solid.svg</pixmap>
+     <pixmap>../img/pngtree-flash-sale-creative-tag-elements-png-image_7262331.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
