@@ -14,25 +14,11 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-    <property name="styleSheet">
-     <string notr="true">background-color: #f8f9fa; /* Màu nền */
-    border: 2px solid #ced4da; /* Viền */
-    border-radius: 5px;       /* Bo góc */
-    padding: 5px;             /* Khoảng cách bên trong */
-    font-size: 14px;          /* Cỡ chữ */
-    color: #495057;           /* Màu chữ */
-border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
-    outline: none;             /* Xóa viền mặc định */</string>
-    </property>
-    <property name="placeholderText">
-     <string>Username</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>270</y>
+      <x>70</x>
+      <y>320</y>
       <width>271</width>
       <height>41</height>
      </rect>
@@ -57,16 +43,13 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>-10</x>
-      <y>440</y>
-      <width>851</width>
-      <height>131</height>
+      <y>470</y>
+      <width>421</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 0); /* Màu hồng nhạt */
-    margin: 0;               /* Loại bỏ khoảng cách mặc định */
-    padding: 0;              /* Loại bỏ padding mặc định */
-    font-family: Arial, sans-serif;</string>
+     <string notr="true">background-color: rgb(0, 0, 0)</string>
     </property>
     <property name="text">
      <string/>
@@ -76,16 +59,13 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>60</y>
-      <width>851</width>
-      <height>411</height>
+      <y>0</y>
+      <width>411</width>
+      <height>471</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);/* Màu hồng nhạt */
-    margin: 0;               /* Loại bỏ khoảng cách mặc định */
-    padding: 0;              /* Loại bỏ padding mặc định */
-    font-family: Arial, sans-serif;</string>
+     <string notr="true">background-color: rgb(244, 244, 244)</string>
     </property>
     <property name="text">
      <string/>
@@ -94,8 +74,6 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
