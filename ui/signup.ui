@@ -77,7 +77,7 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
+      <x>110</x>
       <y>480</y>
       <width>81</width>
       <height>21</height>
@@ -98,7 +98,7 @@ border-radius: 9px</string>
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>220</x>
       <y>480</y>
       <width>81</width>
       <height>21</height>
@@ -114,27 +114,6 @@ border-radius: 9px</string>
     <property name="icon">
      <iconset>
       <normaloff>../img/images.png</normaloff>../img/images.png</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_4">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>480</y>
-      <width>81</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color:rgb(255, 255, 255);
-border-radius: 9px</string>
-    </property>
-    <property name="text">
-     <string>Vkontake</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../img/VK_Compact_Logo_(2021-present).svg.png</normaloff>../img/VK_Compact_Logo_(2021-present).svg.png</iconset>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -467,7 +446,6 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
    <zorder>pushButton</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
    <zorder>label_7</zorder>
    <zorder>checkBox</zorder>
    <zorder>pushButton_5</zorder>
