@@ -22,7 +22,7 @@ class MessageBox():
     
 class Login(QMainWindow):
     def __init__(self):
-        super(Login,self).__init__()
+        super().__init__()
         uic.loadUi("ui/login.ui",self)
 
         self.email = self.findChild(QLineEdit,"txt_email")
@@ -83,7 +83,7 @@ class Login(QMainWindow):
 
 class Register(QMainWindow):
     def __init__(self):
-        super(Register,self).__init__()
+        super().__init__()
         uic.loadUi("ui/resgin.ui",self)
 
         self.name = self.findChild(QLineEdit,"txt_name")
@@ -168,7 +168,7 @@ class Register(QMainWindow):
         
 class Home(QMainWindow):
     def __init__(self,user_id):
-        super(Home,self).__init__()
+        super().__init__()
         uic.loadUi("ui/menu.ui",self)
 
 if __name__ == "_main_":
