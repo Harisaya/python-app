@@ -231,6 +231,9 @@ color:rgb(0, 0, 0)</string>
 border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     outline: none;             /* Xóa viền mặc định */</string>
     </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
     <property name="placeholderText">
      <string>Password</string>
     </property>
@@ -302,6 +305,9 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
     </property>
     <property name="placeholderText">
      <string>Confirm Password</string>
@@ -405,7 +411,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="btn_eye_cp">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -423,7 +429,7 @@ background: none;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../img/download.jpg</normaloff>../img/download.jpg</iconset>
+      <normaloff>../img/eye-slash-solid.jpg</normaloff>../img/eye-slash-solid.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -450,7 +456,7 @@ background: none;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../img/download.jpg</normaloff>../img/download.jpg</iconset>
+      <normaloff>../img/eye-slash-solid.jpg</normaloff>../img/eye-slash-solid.jpg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -520,7 +526,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
    <zorder>label_5</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
-   <zorder>pushButton_4</zorder>
+   <zorder>btn_eye_cp</zorder>
    <zorder>btn_eye_p</zorder>
    <zorder>txt_name</zorder>
    <zorder>label_11</zorder>

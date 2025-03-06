@@ -38,10 +38,10 @@ class Login(QMainWindow):
     def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
         if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
-            btn.setIcon(QIcon("img/eye-solid.svg"))
+            btn.setIcon(QIcon("img/eye-solid.jpg"))
         else:
             input.setEchoMode(QLineEdit.EchoMode.Password)
-            btn.setIcon(QIcon("img/eye-slash-solid.svg"))
+            btn.setIcon(QIcon("img/eye-slash-solid.jpg"))
 
     def login(self):
         msg = MessageBox()
@@ -95,7 +95,7 @@ class Register(QMainWindow):
         self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
         self.btn_eye_cp = self.findChild(QPushButton,"btn_eye_cp")
 
-        self.btn_register.clicked.connect(self.signup)
+        self.btn_register.clicked.connect(self.register)
         self.btn_login.clicked.connect(self.show_login)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
         self.btn_eye_cp.clicked.connect(lambda : self.hiddenOrShow(self.confirm_password,self.btn_eye_cp))
@@ -103,10 +103,10 @@ class Register(QMainWindow):
     def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
         if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
-            btn.setIcon(QIcon("img/eye-solid.svg"))
+            btn.setIcon(QIcon("img/eye-solid.jpg"))
         else:
             input.setEchoMode(QLineEdit.EchoMode.Password)
-            btn.setIcon(QIcon("img/eye-slash-solid.svg"))
+            btn.setIcon(QIcon("img/eye-slash-solid.jpg"))
 
     def register(self):
         msg = MessageBox()
@@ -169,7 +169,7 @@ class Register(QMainWindow):
 class Home(QMainWindow):
     def __init__(self,user_id):
         super().__init__()
-        uic.loadUi("ui/menu.ui",self)
+        uic.loadUi("ui/mainwindow.ui",self)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
