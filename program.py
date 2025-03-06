@@ -31,7 +31,7 @@ class Login(QMainWindow):
         self.btn_register = self.findChild(QPushButton,"btn_register")
         self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
 
-        self.btn_login.clicked.connect(self.register)
+        self.btn_login.clicked.connect(self.login)
         self.btn_register.clicked.connect(self.show_register)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
 
@@ -171,7 +171,7 @@ class Home(QMainWindow):
         super().__init__()
         uic.loadUi("ui/menu.ui",self)
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
     login.show()
