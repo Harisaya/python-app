@@ -79,7 +79,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_18">
@@ -470,7 +470,7 @@
         <x>0</x>
         <y>510</y>
         <width>941</width>
-        <height>351</height>
+        <height>411</height>
        </rect>
       </property>
       <property name="text">
@@ -487,7 +487,7 @@
       <property name="geometry">
        <rect>
         <x>210</x>
-        <y>810</y>
+        <y>750</y>
         <width>561</width>
         <height>41</height>
        </rect>
@@ -506,7 +506,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>840</y>
+        <y>800</y>
         <width>941</width>
         <height>111</height>
        </rect>
@@ -519,7 +519,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>610</y>
+        <y>530</y>
         <width>121</width>
         <height>151</height>
        </rect>
@@ -538,7 +538,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>760</y>
+        <y>680</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -557,7 +557,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>790</y>
+        <y>710</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -621,7 +621,7 @@
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>790</y>
+        <y>710</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -644,7 +644,7 @@
       <property name="geometry">
        <rect>
         <x>460</x>
-        <y>610</y>
+        <y>530</y>
         <width>191</width>
         <height>151</height>
        </rect>
@@ -663,7 +663,7 @@
       <property name="geometry">
        <rect>
         <x>490</x>
-        <y>760</y>
+        <y>680</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -685,7 +685,7 @@
       <property name="geometry">
        <rect>
         <x>490</x>
-        <y>790</y>
+        <y>710</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -708,7 +708,7 @@
       <property name="geometry">
        <rect>
         <x>720</x>
-        <y>610</y>
+        <y>530</y>
         <width>191</width>
         <height>151</height>
        </rect>
@@ -727,7 +727,7 @@
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>760</y>
+        <y>680</y>
         <width>121</width>
         <height>31</height>
        </rect>
@@ -749,7 +749,7 @@
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>790</y>
+        <y>710</y>
         <width>111</width>
         <height>31</height>
        </rect>
@@ -766,6 +766,86 @@
       </property>
       <property name="text">
        <string>6.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_89">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>50</y>
+        <width>131</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/goc-may-tinh-dep_2.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_90">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>190</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PC Intel Core I5&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_91">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>210</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>5.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_92">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>50</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/hot-15.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
      <zorder>label_52</zorder>
@@ -801,6 +881,10 @@
      <zorder>label_27</zorder>
      <zorder>label_25</zorder>
      <zorder>label_47</zorder>
+     <zorder>label_89</zorder>
+     <zorder>label_90</zorder>
+     <zorder>label_91</zorder>
+     <zorder>label_92</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="label_3">
@@ -809,7 +893,7 @@
         <x>0</x>
         <y>0</y>
         <width>941</width>
-        <height>581</height>
+        <height>721</height>
        </rect>
       </property>
       <property name="autoFillBackground">
@@ -963,7 +1047,7 @@
        <string notr="true">color:rgb(236, 13, 13)</string>
       </property>
       <property name="text">
-       <string>180.000.000 đ</string>
+       <string>150.000.000 đ</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_12">
@@ -1049,7 +1133,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>500</y>
+        <y>480</y>
         <width>171</width>
         <height>41</height>
        </rect>
@@ -1068,7 +1152,7 @@
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>500</y>
+        <y>480</y>
         <width>161</width>
         <height>41</height>
        </rect>
@@ -1133,7 +1217,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>540</y>
+        <y>520</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1175,7 +1259,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>380</y>
+        <y>360</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1194,7 +1278,7 @@
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>540</y>
+        <y>520</y>
         <width>131</width>
         <height>31</height>
        </rect>
@@ -1217,7 +1301,7 @@
       <property name="geometry">
        <rect>
         <x>220</x>
-        <y>380</y>
+        <y>360</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1236,7 +1320,7 @@
       <property name="geometry">
        <rect>
         <x>450</x>
-        <y>380</y>
+        <y>360</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1245,7 +1329,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../img/Screenshot 2025-02-12 212547.png</pixmap>
+       <pixmap>../img/e812f99c98bdf675a58450b6c36e0b01-2917458550633628364.jpg</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1255,7 +1339,7 @@
       <property name="geometry">
        <rect>
         <x>680</x>
-        <y>380</y>
+        <y>360</y>
         <width>161</width>
         <height>121</height>
        </rect>
@@ -1274,7 +1358,7 @@
       <property name="geometry">
        <rect>
         <x>700</x>
-        <y>500</y>
+        <y>480</y>
         <width>131</width>
         <height>41</height>
        </rect>
@@ -1292,9 +1376,9 @@
      <widget class="QLabel" name="label_58">
       <property name="geometry">
        <rect>
-        <x>500</x>
-        <y>500</y>
-        <width>71</width>
+        <x>450</x>
+        <y>480</y>
+        <width>171</width>
         <height>41</height>
        </rect>
       </property>
@@ -1305,14 +1389,14 @@
        </font>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Baby boi&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hyundai Grand i10 2018&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_60">
       <property name="geometry">
        <rect>
         <x>690</x>
-        <y>540</y>
+        <y>520</y>
         <width>141</width>
         <height>31</height>
        </rect>
@@ -1331,59 +1415,17 @@
        <string>1.600.000.000 đ</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_65">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>590</y>
-        <width>141</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Dubai</family>
-        <pointsize>16</pointsize>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color:rgb(236, 13, 13)</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_66">
-      <property name="geometry">
-       <rect>
-        <x>680</x>
-        <y>380</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/png-transparent-new-icon-new-icon-sign-thumbnail.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QStackedWidget" name="stackedWidget_2">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>620</y>
+        <y>720</y>
         <width>941</width>
         <height>201</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_4">
        <widget class="QLabel" name="label_50">
@@ -1413,7 +1455,7 @@
           <x>0</x>
           <y>0</y>
           <width>941</width>
-          <height>191</height>
+          <height>201</height>
          </rect>
         </property>
         <property name="text">
@@ -1448,7 +1490,69 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="page_7"/>
+      <widget class="QWidget" name="page_7">
+       <widget class="QLabel" name="label_94">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>941</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../img/Screenshot 2025-02-09 171308.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <widget class="QLabel" name="label_95">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>941</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../img/Screenshot 2025-02-09 171205.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <widget class="QLabel" name="label_96">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>941</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../img/Screenshot 2025-02-09 172440.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
      </widget>
      <widget class="QLabel" name="label_86">
       <property name="geometry">
@@ -1476,6 +1580,61 @@
        <enum>Qt::TextFormat::AutoText</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_93">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>520</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Dubai</family>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(236, 13, 13)</string>
+      </property>
+      <property name="text">
+       <string>270.000.000 đ</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>600</y>
+        <width>941</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Hari Shop chính thức gia nhập thị trường Việt Nam vào đầu năm 2025, với mục đích tạo ra cho bạn một kênh rao vặt trung gian.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Kết nối người mua với người bán lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Đến nay, Hari Shop vẫn luôn tự hào là Website rao vặt được ưa chuộng hàng đầu Việt Nam.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Với Hari Shop, bạn có thể dễ dàng mua bán, trao đổi bất cứ một loại mặt hàng nào, dù đó là đồ cũ hay đồ mới với nhiều lĩnh vực.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>560</y>
+        <width>561</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Hari Shop - Chợ Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
      <zorder>label_15</zorder>
      <zorder>label_3</zorder>
      <zorder>label_4</zorder>
@@ -1501,11 +1660,12 @@
      <zorder>label_57</zorder>
      <zorder>label_58</zorder>
      <zorder>label_60</zorder>
-     <zorder>label_65</zorder>
-     <zorder>label_66</zorder>
      <zorder>label_31</zorder>
      <zorder>stackedWidget_2</zorder>
      <zorder>label_86</zorder>
+     <zorder>label_93</zorder>
+     <zorder>label_65</zorder>
+     <zorder>label_66</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_73">
@@ -1696,7 +1856,7 @@ border-radius : 10px</string>
      <widget class="QLabel" name="label_81">
       <property name="geometry">
        <rect>
-        <x>400</x>
+        <x>410</x>
         <y>90</y>
         <width>421</width>
         <height>241</height>
@@ -1715,7 +1875,7 @@ border-radius : 10px</string>
      <widget class="QLabel" name="label_83">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>500</x>
         <y>340</y>
         <width>261</width>
         <height>31</height>
@@ -1734,7 +1894,7 @@ border-radius : 10px</string>
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
-        <x>544</x>
+        <x>560</x>
         <y>380</y>
         <width>141</width>
         <height>51</height>
