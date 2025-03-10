@@ -45,8 +45,8 @@ class Login(QMainWindow):
 
     def login(self):
         msg = MessageBox()
-        email = self.email.text()
-        password = self.password.text()
+        email = self.email.text().strip()
+        password = self.password.text().strip()
 
         if email == "":
             msg.error_box("không thể để trống")
@@ -110,10 +110,10 @@ class Register(QMainWindow):
 
     def register(self):
         msg = MessageBox()
-        name = self.name.text()
-        email = self.email.text()
-        password = self.password.text()
-        confirm_password = self.confirm_password.text()
+        name = self.name.text().strip()
+        email = self.email.text().strip()
+        password = self.password.text().strip()
+        confirm_password = self.confirm_password.text().strip()
 
         if name == "":
             msg.error_box("Không thể để trống")
