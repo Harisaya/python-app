@@ -2238,8 +2238,8 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <widget class="QRadioButton" name="radioButton">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>190</y>
+        <x>230</x>
+        <y>300</y>
         <width>101</width>
         <height>31</height>
        </rect>

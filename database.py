@@ -41,3 +41,17 @@ def get_user_by_email_and_password(email, password):
     user = cursor.fetchone()
     conn.close()
     return user
+
+def update_avatar_user(id, avatar):
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE users SET avatar = ? WHERE id = ?", (avatar, id))
+    conn.commit()
+    conn.close()
+
+def update_user(id, name, email, password):
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?", (name, email, password, id))
+    conn.commit()
+    conn.close()

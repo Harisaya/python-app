@@ -151,6 +151,8 @@ class Register(QMainWindow):
 
             return
         
+        
+        
         create_user(name,email,password)
         msg.success_box("Đăng ký thành công")
         self.show_login()
@@ -170,18 +172,28 @@ class Home(QMainWindow):
     def __init__(self,user_id):
         super().__init__()
         uic.loadUi("ui/mainwindow.ui",self)
+
+        self.user_id = user_id
+        self.user = get_user_by_id(user_id)
+        self.loadAccountInfo()
+
         self.main_widget = self.findChild(QStackedWidget,"main_widget")
         self.btn_nav_account = self.findChild(QPushButton,"btn_nav_account")
         self.btn_nav_home = self.findChild(QPushButton,"btn_nav_home")
         self.btn_flash_sale = self.findChild(QPushButton,"btn_flash_sale")
 
+        self.btn_avatar = self.findChild(QPushButton,"btn_avatar")
+        self.btn_avatar.clicked.connect(self.update_avatar)
+
         self.btn_nav_home.clicked.connect(lambda : self.navMainScreen(0))
         self.btn_flash_sale.clicked.connect(lambda : self.navMainScreen(1))
         self.btn_nav_account.clicked.connect(lambda : self.navMainScreen(2))
 
-        self.user_id = user_id
-        self.user = get_user_by_id(user_id)
-        self.loadAccountInfo()
+        self.btn_gender = QtWidgets.QComboBox(parent=self.centralwidget)
+        self.btn_gender.setGeometry(QtCore.QRect(150, 300, 181, 31))
+        self.btn_gender.addItems(["Male", "Female", "Other"])
+        self.btn_gender.setObjectName("btn_gender")
+
 
     def navMainScreen(self, index):
         self.main_widget.setCurrentIndex(index)
@@ -192,6 +204,13 @@ class Home(QMainWindow):
 
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
+    
+    def update_avatar(self):
+        file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
+        if file:
+            self.user["avatar"] = file
+            self.btn_avatar.setIcon(QIcon(file))
+            update_avatar_user(self.user_id, file)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

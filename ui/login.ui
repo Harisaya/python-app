@@ -6,42 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>850</width>
-    <height>594</height>
+    <width>849</width>
+    <height>596</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="txt_email">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>180</y>
-      <width>251</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: #f8f9fa; /* Màu nền */
-    border: 2px solid #ced4da; /* Viền */
-    border-radius: 5px;       /* Bo góc */
-    padding: 5px;             /* Khoảng cách bên trong */
-    font-size: 14px;          /* Cỡ chữ */
-    color: #495057;           /* Màu chữ */
-border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
-    outline: none;             /* Xóa viền mặc định */</string>
-    </property>
-    <property name="placeholderText">
-     <string>Email</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>320</y>
+      <y>340</y>
       <width>211</width>
       <height>41</height>
      </rect>
@@ -88,7 +65,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>110</y>
+      <y>90</y>
       <width>311</width>
       <height>51</height>
      </rect>
@@ -210,32 +187,6 @@ color:rgb(0, 0, 0)</string>
      <string>-Welcome, Have a nice day !-</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="txt_password">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>250</y>
-      <width>251</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: #f8f9fa; /* Màu nền */
-    border: 2px solid #ced4da; /* Viền */
-    border-radius: 5px;       /* Bo góc */
-    padding: 5px;             /* Khoảng cách bên trong */
-    font-size: 14px;          /* Cỡ chữ */
-    color: #495057;           /* Màu chữ */
-border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
-    outline: none;             /* Xóa viền mặc định */</string>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::EchoMode::Password</enum>
-    </property>
-    <property name="placeholderText">
-     <string>Password</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
@@ -331,7 +282,7 @@ background-color: rgb(255, 190, 78)</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>418</x>
+      <x>420</x>
       <y>0</y>
       <width>431</width>
       <height>551</height>
@@ -347,75 +298,130 @@ background-color: rgb(255, 190, 78)</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>185</y>
-      <width>31</width>
-      <height>31</height>
+      <x>70</x>
+      <y>160</y>
+      <width>271</width>
+      <height>161</height>
      </rect>
     </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/at-solid.svg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>250</y>
-      <width>31</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/key-solid.svg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_eye_p">
-    <property name="geometry">
-     <rect>
-      <x>274</x>
-      <y>253</y>
-      <width>51</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: none;
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <widget class="QLineEdit" name="txt_email">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>259</width>
+            <height>57</height>
+           </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>2000</width>
+            <height>2000</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f8f9fa; /* Màu nền */
+    border: 2px solid #ced4da; /* Viền */
+    border-radius: 5px;       /* Bo góc */
+    padding: 5px;             /* Khoảng cách bên trong */
+    font-size: 14px;          /* Cỡ chữ */
+    color: #495057;           /* Màu chữ */
+border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
+    outline: none;             /* Xóa viền mặc định */</string>
+          </property>
+          <property name="placeholderText">
+           <string>Email</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <widget class="QLineEdit" name="txt_password">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>261</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #f8f9fa; /* Màu nền */
+    border: 2px solid #ced4da; /* Viền */
+    border-radius: 5px;       /* Bo góc */
+    padding: 5px;             /* Khoảng cách bên trong */
+    font-size: 14px;          /* Cỡ chữ */
+    color: #495057;           /* Màu chữ */
+border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
+    outline: none;             /* Xóa viền mặc định */</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Password</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_eye_p">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>30</y>
+            <width>51</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: none;
 background: none;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../img/eye-slash-solid.jpg</normaloff>../img/eye-slash-solid.jpg</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>32</width>
-      <height>32</height>
-     </size>
-    </property>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../img/eye-slash-solid.jpg</normaloff>../img/eye-slash-solid.jpg</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
    <zorder>label_15</zorder>
    <zorder>label_13</zorder>
    <zorder>label_3</zorder>
-   <zorder>txt_email</zorder>
    <zorder>btn_login</zorder>
    <zorder>label_5</zorder>
    <zorder>pushButton_2</zorder>
@@ -423,21 +429,18 @@ background: none;</string>
    <zorder>label_7</zorder>
    <zorder>label</zorder>
    <zorder>label_12</zorder>
-   <zorder>txt_password</zorder>
    <zorder>label_10</zorder>
    <zorder>label_25</zorder>
    <zorder>btn_register</zorder>
    <zorder>label_2</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_6</zorder>
-   <zorder>btn_eye_p</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>850</width>
+     <width>849</width>
      <height>22</height>
     </rect>
    </property>
