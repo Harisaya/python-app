@@ -11,7 +11,7 @@ def connect_db():
     conn.row_factory = dict_factory
     return conn
 
-def create_user(name, email, password):
+def create_user(name, email, password, gender):
     conn = connect_db()
     cursor = conn.cursor()
     cursor.execute("INSERT INTO users (name, email, password) VALUES (?, ?, ?)", (name, email, password))
@@ -49,7 +49,7 @@ def update_avatar_user(id, avatar):
     conn.commit()
     conn.close()
 
-def update_user(id, name, email, password):
+def update_user(id, name, gender):
     conn = connect_db()
     cursor = conn.cursor()
     cursor.execute("UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?", (name, email, password, id))
