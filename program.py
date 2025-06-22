@@ -1,12 +1,11 @@
-from PyQt6 import QtWidgets, QtCore
-from PyQt6.QtWidgets import *
-from PyQt6.QtGui import *
-from PyQt6.QtCore import *
 from PyQt6 import uic
+from PyQt6.QtWidgets import *
+from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import *
 import sys
 from database import *
 
-class MessageBox():
+class MessageBox:
     def success_box(self, message):
         box = QMessageBox()
         box.setWindowTitle("Success")
@@ -49,28 +48,18 @@ class Login(QMainWindow):
         email = self.email.text().strip()
         password = self.password.text().strip()
 
-        if email == "":
-            msg.error_box("không thể để trống")
-            self.email.setFocus()
-            return
-
-        if password == "":
-            msg.error_box("không thể để trống")
-            self.password.setFocus()
+        if email == "" or password == "":
+            msg.error_box("Không thể để trống")
             return
 
         user = get_user_by_email_and_password(email, password)
-        if user is not None:
+        if user:
             msg.success_box("Đăng nhập thành công")
-            self.show_home(user["id"])
-            return
-
-        msg.error_box("Đăng nhập thất bại")
-
-    def show_home(self, user_id):
-        self.home = Home(user_id)
-        self.home.show()
-        self.close()
+            self.home = Home(user["id"])
+            self.home.show()
+            self.close()
+        else:
+            msg.error_box("Đăng nhập thất bại")
 
     def show_register(self):
         self.register = Register()
@@ -80,7 +69,7 @@ class Login(QMainWindow):
 class Register(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi("ui/resgin.ui", self)
+        uic.loadUi("ui/resign.ui", self)
 
         self.name = self.findChild(QLineEdit, "txt_name")
         self.email = self.findChild(QLineEdit, "txt_email")
@@ -111,45 +100,29 @@ class Register(QMainWindow):
         password = self.password.text().strip()
         confirm_password = self.confirm_password.text().strip()
 
-        if name == "":
+        if "" in [name, email, password, confirm_password]:
             msg.error_box("Không thể để trống")
-            self.name.setFocus()
-            return
-
-        if email == "":
-            msg.error_box("Không thể để trống")
-            self.email.setFocus()
-            return
-
-        if password == "":
-            msg.error_box("Không thể để trống")
-            self.password.setFocus()
-            return
-
-        if confirm_password == "":
-            msg.error_box("Không thể để trống")
-            self.confirm_password.setFocus()
             return
 
         if password != confirm_password:
             msg.error_box("Mật khẩu không trùng khớp")
-            self.password.setFocus()
             return
 
         if not self.validate_email(email):
             msg.error_box("Email không hợp lệ")
-            self.email.setFocus()
             return
 
-        if get_user_by_email(email) is not None:
+        if get_user_by_email(email):
             msg.error_box("Email đã tồn tại")
             return
 
+        insert_user(name, email, password)
+        msg.success_box("Đăng ký thành công")
+        self.show_login()
+
     def validate_email(self, s):
-        idx_at = s.find("@")
-        if idx_at == -1:
-            return False
-        return '.' in s[idx_at + 1:]
+        idx = s.find("@")
+        return idx != -1 and '.' in s[idx + 1:]
 
     def show_login(self):
         self.login = Login()
@@ -161,67 +134,70 @@ class Home(QMainWindow):
         super().__init__()
         uic.loadUi("ui/mainwindow.ui", self)
 
-        self.txt_name = self.findChild(QLineEdit, "txt_name")
-        self.txt_email = self.findChild(QLineEdit, "txt_email")
-        
         self.user_id = user_id
         self.user = get_user_by_id(user_id)
 
+        self.txt_name = self.findChild(QLineEdit, "txt_name")
+        self.txt_email = self.findChild(QLineEdit, "txt_email")
         self.main_widget = self.findChild(QStackedWidget, "main_widget")
-        self.btn_nav_account = self.findChild(QPushButton, "btn_nav_account")
+
         self.btn_nav_home = self.findChild(QPushButton, "btn_nav_home")
+        self.btn_nav_account = self.findChild(QPushButton, "btn_nav_account")
         self.btn_flash_sale = self.findChild(QPushButton, "btn_flash_sale")
-
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
-        self.btn_avatar.clicked.connect(self.update_avatar)
 
+        self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(0))
         self.btn_flash_sale.clicked.connect(lambda: self.navMainScreen(1))
         self.btn_nav_account.clicked.connect(lambda: self.navMainScreen(2))
 
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
+
     def navMainScreen(self, index):
         self.main_widget.setCurrentIndex(index)
-
-    def update_avatar(self):
-        file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
-        if file:
-            self.user_id["avatar"] = file
-            self.btn_avatar.setIcon(QIcon(file))
-            update_avatar_user(self.user_id, file)
-            MessageBox().success_box("Cập nhật ảnh đại diện thành công")
 
     def update_info(self):
         name = self.txt_name.text().strip()
         email = self.txt_email.text().strip()
-        age = self.txt_age.text().strip()
-        if self.user is None:
-            MessageBox().error_box("Không tìm thấy người dùng")
-            return
 
-        if name == "":
-            MessageBox().error_box("Không thể để trống tên")
-            self.txt_name.setFocus()
-            return
-
-        if email == "":
-            MessageBox().error_box("Không thể để trống email")
-            self.txt_email.setFocus()
+        if name == "" or email == "":
+            MessageBox().error_box("Không được để trống")
             return
 
         if not self.validate_email(email):
             MessageBox().error_box("Email không hợp lệ")
-            self.txt_email.setFocus()
             return
 
-        if get_user_by_email(email) is not None and get_user_by_email(email)["id"] != self.user_id:
+        other = get_user_by_email(email)
+        if other and other["id"] != self.user_id:
             MessageBox().error_box("Email đã tồn tại")
             return
 
         update_user_info(self.user_id, name, email)
         MessageBox().success_box("Cập nhật thông tin thành công")
 
+    def update_avatar(self):
+        file_dialog = QFileDialog()
+        file_dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
+        file_dialog.setNameFilter("Images (*.png *.jpg *.jpeg *.bmp)")
+        if file_dialog.exec():
+            files = file_dialog.selectedFiles()
+            if files:
+                avatar_path = files[0]
+                update_avatar_user(self.user_id, avatar_path)
+                MessageBox().success_box("Cập nhật ảnh đại diện thành công")
+            else:
+                MessageBox().error_box("Không có tệp nào được chọn")
+
+    def validate_email(self, s):
+        idx = s.find("@")
+        return idx != -1 and '.' in s[idx + 1:]
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
     login.show()
     sys.exit(app.exec())
+
+INSERT INTO products (name, price, description, image, rating) VALUES ('Product 1', 100.0, 'Description for product 1', 'img/product1.jpg', 4.5);

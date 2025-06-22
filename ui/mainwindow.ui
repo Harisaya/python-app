@@ -112,7 +112,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>280</y>
+        <y>260</y>
         <width>941</width>
         <height>171</height>
        </rect>
@@ -140,7 +140,7 @@
         <x>0</x>
         <y>0</y>
         <width>951</width>
-        <height>481</height>
+        <height>461</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -160,7 +160,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>480</y>
+        <y>460</y>
         <width>941</width>
         <height>31</height>
        </rect>
@@ -186,7 +186,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>510</y>
+        <y>490</y>
         <width>941</width>
         <height>411</height>
        </rect>
@@ -204,9 +204,9 @@
      <widget class="QLabel" name="label_54">
       <property name="geometry">
        <rect>
-        <x>210</x>
-        <y>750</y>
-        <width>561</width>
+        <x>220</x>
+        <y>740</y>
+        <width>531</width>
         <height>41</height>
        </rect>
       </property>
@@ -217,20 +217,20 @@
        </font>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Hari Shop - Chợ Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Rishop - Chợ Mua Bán, Rao Vặt Trực Tuyến Hàng Đầu Của Người Việt&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_55">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>800</y>
+        <y>780</y>
         <width>941</width>
         <height>111</height>
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Hari Shop chính thức gia nhập thị trường Việt Nam vào đầu năm 2025, với mục đích tạo ra cho bạn một kênh rao vặt trung gian.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Kết nối người mua với người bán lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Đến nay, Hari Shop vẫn luôn tự hào là Website rao vặt được ưa chuộng hàng đầu Việt Nam.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Với Hari Shop, bạn có thể dễ dàng mua bán, trao đổi bất cứ một loại mặt hàng nào, dù đó là đồ cũ hay đồ mới với nhiều lĩnh vực.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Rishop chính thức gia nhập thị trường Việt Nam vào đầu năm 2025, với mục đích tạo ra cho bạn một kênh rao vặt trung gian.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Kết nối người mua với người bán lại với nhau bằng những giao dịch cực kỳ đơn giản, tiện lợi, nhanh chóng, an toàn, mang đến hiệu quả bất ngờ.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Đến nay, Rishop vẫn luôn tự hào là Website rao vặt được ưa chuộng hàng đầu Việt Nam.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;Với Rishop, bạn có thể dễ dàng mua bán, trao đổi bất cứ một loại mặt hàng nào, dù đó là đồ cũ hay đồ mới với nhiều lĩnh vực.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_56">
@@ -489,53 +489,63 @@
      <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>190</x>
         <y>110</y>
         <width>101</width>
         <height>91</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>F:/00.png</normaloff>F:/00.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>350</x>
         <y>110</y>
         <width>111</width>
         <height>91</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_4">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>510</x>
         <y>110</y>
         <width>101</width>
         <height>91</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>670</x>
+        <x>660</x>
         <y>110</y>
         <width>101</width>
         <height>91</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string/>
       </property>
      </widget>
      <zorder>label_52</zorder>

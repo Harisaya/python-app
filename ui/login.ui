@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>340</y>
+      <y>330</y>
       <width>211</width>
       <height>41</height>
      </rect>
@@ -65,7 +65,7 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>90</y>
+      <y>60</y>
       <width>311</width>
       <height>51</height>
      </rect>
@@ -145,30 +145,12 @@ background-color:rgb(255, 255, 255)</string>
      <string>Or Create Your Account With :</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>-10</y>
-      <width>221</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font-size: 20px;          /* Kích thước chữ */
-    font-weight: Arial;
-color:rgb(0, 0, 0)</string>
-    </property>
-    <property name="text">
-     <string>      Hari Shop Online</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>50</y>
-      <width>341</width>
+      <x>100</x>
+      <y>10</y>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -184,7 +166,7 @@ color:rgb(0, 0, 0)</string>
 color:rgb(0, 0, 0)</string>
     </property>
     <property name="text">
-     <string>-Welcome, Have a nice day !-</string>
+     <string>-Have a nice day !-</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_13">
@@ -302,7 +284,7 @@ background-color: rgb(255, 190, 78)</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>160</y>
+      <y>140</y>
       <width>271</width>
       <height>161</height>
      </rect>
@@ -419,6 +401,25 @@ background: none;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/ct_orange_c2c_200.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>label_15</zorder>
    <zorder>label_13</zorder>
    <zorder>label_3</zorder>
@@ -427,13 +428,13 @@ background: none;</string>
    <zorder>pushButton_2</zorder>
    <zorder>pushButton_3</zorder>
    <zorder>label_7</zorder>
-   <zorder>label</zorder>
    <zorder>label_12</zorder>
    <zorder>label_10</zorder>
    <zorder>label_25</zorder>
    <zorder>btn_register</zorder>
    <zorder>label_2</zorder>
    <zorder>horizontalLayoutWidget</zorder>
+   <zorder>label</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
