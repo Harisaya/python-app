@@ -79,7 +79,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_18">
@@ -486,13 +486,13 @@
        <string>6.000.000 đ</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="cars_button">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>110</y>
+        <x>210</x>
+        <y>90</y>
         <width>101</width>
-        <height>91</height>
+        <height>111</height>
        </rect>
       </property>
       <property name="text">
@@ -509,43 +509,50 @@
        </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="pet_button">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>110</y>
-        <width>111</width>
-        <height>91</height>
+        <x>420</x>
+        <y>90</y>
+        <width>101</width>
+        <height>121</height>
        </rect>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>F:/01.png</normaloff>F:/01.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="mobile_button">
       <property name="geometry">
        <rect>
-        <x>510</x>
-        <y>110</y>
-        <width>101</width>
-        <height>91</height>
+        <x>630</x>
+        <y>90</y>
+        <width>91</width>
+        <height>111</height>
        </rect>
       </property>
       <property name="text">
        <string/>
       </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="geometry">
-       <rect>
-        <x>660</x>
-        <y>110</y>
-        <width>101</width>
-        <height>91</height>
-       </rect>
+      <property name="icon">
+       <iconset>
+        <normaloff>F:/10.png</normaloff>F:/10.png</iconset>
       </property>
-      <property name="text">
-       <string/>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>120</height>
+       </size>
       </property>
      </widget>
      <zorder>label_52</zorder>
@@ -567,10 +574,9 @@
      <zorder>label_71</zorder>
      <zorder>label_72</zorder>
      <zorder>label_47</zorder>
-     <zorder>pushButton_2</zorder>
-     <zorder>pushButton_3</zorder>
-     <zorder>pushButton_4</zorder>
-     <zorder>pushButton_5</zorder>
+     <zorder>cars_button</zorder>
+     <zorder>pet_button</zorder>
+     <zorder>mobile_button</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="label_3">
@@ -1872,28 +1878,6 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
       <property name="frameShadow">
        <enum>QFrame::Shadow::Raised</enum>
       </property>
-      <widget class="QLabel" name="profile_avatar">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>101</width>
-         <height>101</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../img/user imgae.svg</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="QPushButton" name="btn_avatar">
        <property name="geometry">
         <rect>
@@ -1917,6 +1901,32 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
         <size>
          <width>20</width>
          <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="image_button">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>111</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 1px</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../img/user imgae.svg</normaloff>../img/user imgae.svg</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
         </size>
        </property>
       </widget>

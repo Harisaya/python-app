@@ -1,3 +1,4 @@
+import os
 from PyQt6 import uic
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import QIcon
@@ -145,6 +146,7 @@ class Home(QMainWindow):
         self.btn_nav_account = self.findChild(QPushButton, "btn_nav_account")
         self.btn_flash_sale = self.findChild(QPushButton, "btn_flash_sale")
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
+        self.image_button = self.findChild(QPushButton, "image_button")
 
         self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(0))
@@ -158,46 +160,39 @@ class Home(QMainWindow):
         self.main_widget.setCurrentIndex(index)
 
     def update_info(self):
-        name = self.txt_name.text().strip()
-        email = self.txt_email.text().strip()
+        self.txt_name = self.findChild(QLineEdit,"txt_name")
+        self.txt_email = self.findChild(QLineEdit,"txt_email")
 
-        if name == "" or email == "":
-            MessageBox().error_box("Không được để trống")
-            return
+        if self.user["avatar"]:
+            self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
 
-        if not self.validate_email(email):
-            MessageBox().error_box("Email không hợp lệ")
-            return
-
-        other = get_user_by_email(email)
-        if other and other["id"] != self.user_id:
-            MessageBox().error_box("Email đã tồn tại")
-            return
-
-        update_user_info(self.user_id, name, email)
-        MessageBox().success_box("Cập nhật thông tin thành công")
+    # def update_avatar(self):
+    #     file_dialog = QFileDialog()
+    #     file_dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
+    #     file_dialog.setNameFilter("Images (*.png *.jpg *.jpeg *.bmp)")
+    #     if file_dialog.exec():
+    #         files = file_dialog.selectedFiles()
+    #         if files:
+    #             avatar_path = files[0]
+    #             update_avatar_user(self.user_id, avatar_path)
+    #         if files:
+    #             self.user["avatar"] = files
+    #             self.profile_avatar.setPixmap(QLabel(files))
+    #             MessageBox().success_box("Cập nhật ảnh đại diện thành công")
+    #         else:
+    #             MessageBox().error_box("Không có tệp nào được chọn")
 
     def update_avatar(self):
-        file_dialog = QFileDialog()
-        file_dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
-        file_dialog.setNameFilter("Images (*.png *.jpg *.jpeg *.bmp)")
-        if file_dialog.exec():
-            files = file_dialog.selectedFiles()
-            if files:
-                avatar_path = files[0]
-                update_avatar_user(self.user_id, avatar_path)
-                MessageBox().success_box("Cập nhật ảnh đại diện thành công")
-            else:
-                MessageBox().error_box("Không có tệp nào được chọn")
-
-    def validate_email(self, s):
-        idx = s.find("@")
-        return idx != -1 and '.' in s[idx + 1:]
+            file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
+            if file:
+                self.user["avatar"] = file
+                self.btn_avatar.setIcon(QIcon(file))
+                update_avatar_user(self.user_id, file)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
     login.show()
     sys.exit(app.exec())
-
-INSERT INTO products (name, price, description, image, rating) VALUES ('Product 1', 100.0, 'Description for product 1', 'img/product1.jpg', 4.5);
