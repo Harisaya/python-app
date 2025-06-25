@@ -1761,6 +1761,9 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
         </widget>
        </item>
        <item>
+        <widget class="QDateEdit" name="txt_birthday"/>
+       </item>
+       <item>
         <widget class="QFrame" name="frame">
          <property name="maximumSize">
           <size>
@@ -1787,7 +1790,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
            <string>Giới Tính/Gender</string>
           </property>
          </widget>
-         <widget class="QComboBox" name="btn_gender">
+         <widget class="QComboBox" name="cb_gender">
           <property name="geometry">
            <rect>
             <x>0</x>
@@ -2051,7 +2054,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <x>0</x>
      <y>0</y>
      <width>939</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

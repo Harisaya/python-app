@@ -133,9 +133,12 @@ class Home(QMainWindow):
     def __init__(self, user_id):
         super().__init__()
         uic.loadUi("ui/mainwindow.ui", self)
+        
+        self.msg = MessageBox()
 
         self.user_id = user_id
         self.user = get_user_by_id(user_id)
+        self.loadAccountInfo()
 
         self.txt_name = self.findChild(QLineEdit, "txt_name")
         self.txt_email = self.findChild(QLineEdit, "txt_email")
@@ -146,14 +149,13 @@ class Home(QMainWindow):
         self.btn_flash_sale = self.findChild(QPushButton, "btn_flash_sale")
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
         self.image_button = self.findChild(QLabel, "image_button")
+        self.btn_update_info = self.findChild(QPushButton, "update_user")
 
         self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(0))
         self.btn_flash_sale.clicked.connect(lambda: self.navMainScreen(1))
         self.btn_nav_account.clicked.connect(lambda: self.navMainScreen(2))
-
-        self.txt_name.setText(self.user["name"])
-        self.txt_email.setText(self.user["email"])
+        self.btn_update_info.clicked.connect(self.update_info)
 
     def navMainScreen(self, index):
         self.main_widget.setCurrentIndex(index)
@@ -161,35 +163,46 @@ class Home(QMainWindow):
     def loadAccountInfo(self):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
+        self.txt_age = self.findChild(QLineEdit,"txt_age")
+        self.cb_gender = self.findChild(QComboBox,"cb_gender")
+        self.txt_birthday = self.findChild(QDateEdit,"txt_birthday")
+        self.txt_birthday.setDisplayFormat("dd/MM/yyyy")
+        self.txt_age.setValidator(QIntValidator())
 
         if self.user["avatar"]:
             self.image_button.setPixmap(QPixmap(self.user["avatar"]))
 
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
-
-    # def update_avatar(self):
-    #     file_dialog = QFileDialog()
-    #     file_dialog.setFileMode(QFileDialog.FileMode.ExistingFiles)
-    #     file_dialog.setNameFilter("Images (*.png *.jpg *.jpeg *.bmp)")
-    #     if file_dialog.exec():
-    #         files = file_dialog.selectedFiles()
-    #         if files:
-    #             avatar_path = files[0]
-    #             update_avatar_user(self.user_id, avatar_path)
-    #         if files:
-    #             self.user["avatar"] = files
-    #             self.profile_avatar.setPixmap(QLabel(files))
-    #             MessageBox().success_box("Cập nhật ảnh đại diện thành công")
-    #         else:
-    #             MessageBox().error_box("Không có tệp nào được chọn")
+        self.txt_age.setText(self.user["age"])
+        self.txt_birthday.setDate(QDate.fromString(self.user["birthday"], "dd/MM/yyyy"))
+        
+        if not self.user["gender"]:
+            self.cb_gender.setCurrentIndex(0)
+        elif self.user["gender"] == "Nam":
+            self.cb_gender.setCurrentIndex(1)
+        elif self.user["gender"] == "Nữ":
+            self.cb_gender.setCurrentIndex(2)
+        else:
+            self.cb_gender.setCurrentIndex(3)
 
     def update_avatar(self):
-            file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
+            file, _ = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")
             if file:
                 self.user["avatar"] = file
                 self.image_button.setPixmap(QPixmap(file))
                 update_avatar_user(self.user_id, file)
+                
+    def update_info(self):
+        name = self.txt_name.text().strip()
+        email = self.txt_email.text().strip()
+        gender = self.cb_gender.currentText()
+        birthday = self.txt_birthday.text().strip()
+        age = self.txt_age.text().strip()
+        
+        update_user(self.user_id, name, email, gender, birthday, age)
+        self.msg.success_box("Cập nhật thông tin thành công")
+        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

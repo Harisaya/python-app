@@ -12,32 +12,18 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(850, 594)
+        MainWindow.resize(849, 596)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.txt_email = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.txt_email.setGeometry(QtCore.QRect(80, 180, 251, 41))
-        self.txt_email.setStyleSheet("background-color: #f8f9fa; /* Màu nền */\n"
-"    border: 2px solid #ced4da; /* Viền */\n"
-"    border-radius: 5px;       /* Bo góc */\n"
-"    padding: 5px;             /* Khoảng cách bên trong */\n"
-"    font-size: 14px;          /* Cỡ chữ */\n"
-"    color: #495057;           /* Màu chữ */\n"
-"border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */\n"
-"    outline: none;             /* Xóa viền mặc định */")
-        self.txt_email.setObjectName("txt_email")
         self.btn_login = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.btn_login.setGeometry(QtCore.QRect(100, 320, 211, 41))
-        self.btn_login.setStyleSheet(" background-color: #8a2be2; /* Màu nền tím */\n"
-"    color: white;             /* Màu chữ */\n"
+        self.btn_login.setGeometry(QtCore.QRect(100, 330, 211, 41))
+        self.btn_login.setStyleSheet(" background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 89, 102, 255), stop:1 rgba(255, 255, 255, 255)); /* Màu nền tím */\n"
+"    color: black;             /* Màu chữ */\n"
 "    font-size: 16px;          /* Kích thước chữ */\n"
 "    font-weight: bold;        /* Chữ in đậm */\n"
 "    border: none;             /* Xóa đường viền mặc định */\n"
 "    border-radius: 20px;      /* Bo góc */\n"
-"    padding: 10px 20px;       /* Khoảng cách bên trong */\n"
-"    background-color: #6a1bbd; /* Màu nền khi hover */\n"
-"    background-color: #4e1391; /* Màu nền khi nhấn */\n"
-" ")
+"    padding: 10px 20px;       /* Khoảng cách bên trong */")
         self.btn_login.setObjectName("btn_login")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(0, 90, 421, 361))
@@ -50,7 +36,7 @@ class Ui_MainWindow(object):
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.label_5 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(50, 110, 311, 51))
+        self.label_5.setGeometry(QtCore.QRect(50, 60, 311, 51))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(17)
@@ -81,14 +67,8 @@ class Ui_MainWindow(object):
 " border: 2px solid #ced4da;\n"
 "background-color:rgb(255, 255, 255)")
         self.label_7.setObjectName("label_7")
-        self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(100, -10, 221, 51))
-        self.label.setStyleSheet("font-size: 20px;          /* Kích thước chữ */\n"
-"    font-weight: Arial;\n"
-"color:rgb(0, 0, 0)")
-        self.label.setObjectName("label")
         self.label_12 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_12.setGeometry(QtCore.QRect(40, 50, 341, 31))
+        self.label_12.setGeometry(QtCore.QRect(100, 10, 221, 31))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(-1)
@@ -97,17 +77,6 @@ class Ui_MainWindow(object):
         self.label_12.setStyleSheet("font-size: 25px;          /* Kích thước chữ */\n"
 "color:rgb(0, 0, 0)")
         self.label_12.setObjectName("label_12")
-        self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit_2.setGeometry(QtCore.QRect(80, 250, 251, 41))
-        self.lineEdit_2.setStyleSheet("background-color: #f8f9fa; /* Màu nền */\n"
-"    border: 2px solid #ced4da; /* Viền */\n"
-"    border-radius: 5px;       /* Bo góc */\n"
-"    padding: 5px;             /* Khoảng cách bên trong */\n"
-"    font-size: 14px;          /* Cỡ chữ */\n"
-"    color: #495057;           /* Màu chữ */\n"
-"border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */\n"
-"    outline: none;             /* Xóa viền mặc định */")
-        self.lineEdit_2.setObjectName("lineEdit_2")
         self.label_13 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_13.setGeometry(QtCore.QRect(-10, 0, 431, 91))
         self.label_13.setStyleSheet("background-color: rgb(244, 244, 244)")
@@ -127,70 +96,104 @@ class Ui_MainWindow(object):
         self.label_25.setStyleSheet("color:rgb(255, 255, 255)")
         self.label_25.setTextFormat(QtCore.Qt.TextFormat.PlainText)
         self.label_25.setObjectName("label_25")
-        self.pushButton_5 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_5.setGeometry(QtCore.QRect(260, 520, 91, 21))
-        self.pushButton_5.setStyleSheet("color: white;             /* Màu chữ */\n"
+        self.btn_register = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.btn_register.setGeometry(QtCore.QRect(260, 520, 91, 21))
+        self.btn_register.setStyleSheet("color: white;             /* Màu chữ */\n"
 "font-size: 16px;          /* Kích thước chữ */\n"
 "font-weight: bold;        /* Chữ in đậm */\n"
 "border: none;             /* Xóa đường viền mặc định */\n"
 "border-radius: 20px;\n"
 "background-color: rgb(255, 190, 78)")
-        self.pushButton_5.setObjectName("pushButton_5")
+        self.btn_register.setObjectName("btn_register")
         self.label_15 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_15.setGeometry(QtCore.QRect(0, 440, 421, 111))
         self.label_15.setStyleSheet("background-color: rgb(0, 0, 0)")
         self.label_15.setText("")
         self.label_15.setObjectName("label_15")
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(418, 0, 431, 551))
+        self.label_2.setGeometry(QtCore.QRect(420, 0, 431, 551))
         self.label_2.setText("")
         self.label_2.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/265b15abe358d372e8fe6cd38d982614b29e3911.png"))
         self.label_2.setScaledContents(True)
         self.label_2.setObjectName("label_2")
-        self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(40, 185, 31, 31))
-        self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/at-solid.svg"))
-        self.label_4.setScaledContents(True)
-        self.label_4.setObjectName("label_4")
-        self.label_6 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_6.setGeometry(QtCore.QRect(40, 250, 31, 31))
-        self.label_6.setText("")
-        self.label_6.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/key-solid.svg"))
-        self.label_6.setScaledContents(True)
-        self.label_6.setObjectName("label_6")
-        self.pushButton_4 = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(274, 253, 51, 31))
-        self.pushButton_4.setStyleSheet("border: none;\n"
+        self.horizontalLayoutWidget = QtWidgets.QWidget(parent=self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(70, 140, 271, 161))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame_2 = QtWidgets.QFrame(parent=self.horizontalLayoutWidget)
+        self.frame_2.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.txt_email = QtWidgets.QLineEdit(parent=self.frame_2)
+        self.txt_email.setGeometry(QtCore.QRect(0, 10, 259, 57))
+        self.txt_email.setMaximumSize(QtCore.QSize(2000, 2000))
+        self.txt_email.setStyleSheet("background-color: #f8f9fa; /* Màu nền */\n"
+"    border: 2px solid #ced4da; /* Viền */\n"
+"    border-radius: 5px;       /* Bo góc */\n"
+"    padding: 5px;             /* Khoảng cách bên trong */\n"
+"    font-size: 14px;          /* Cỡ chữ */\n"
+"    color: #495057;           /* Màu chữ */\n"
+"border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */\n"
+"    outline: none;             /* Xóa viền mặc định */")
+        self.txt_email.setObjectName("txt_email")
+        self.verticalLayout.addWidget(self.frame_2)
+        self.frame = QtWidgets.QFrame(parent=self.horizontalLayoutWidget)
+        self.frame.setEnabled(True)
+        self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
+        self.frame.setObjectName("frame")
+        self.txt_password = QtWidgets.QLineEdit(parent=self.frame)
+        self.txt_password.setGeometry(QtCore.QRect(0, 20, 261, 51))
+        self.txt_password.setStyleSheet("background-color: #f8f9fa; /* Màu nền */\n"
+"    border: 2px solid #ced4da; /* Viền */\n"
+"    border-radius: 5px;       /* Bo góc */\n"
+"    padding: 5px;             /* Khoảng cách bên trong */\n"
+"    font-size: 14px;          /* Cỡ chữ */\n"
+"    color: #495057;           /* Màu chữ */\n"
+"border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */\n"
+"    outline: none;             /* Xóa viền mặc định */")
+        self.txt_password.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
+        self.txt_password.setObjectName("txt_password")
+        self.btn_eye_p = QtWidgets.QPushButton(parent=self.frame)
+        self.btn_eye_p.setGeometry(QtCore.QRect(210, 30, 51, 31))
+        self.btn_eye_p.setStyleSheet("border: none;\n"
 "background: none;")
-        self.pushButton_4.setText("")
+        self.btn_eye_p.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/download.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_4.setIcon(icon2)
-        self.pushButton_4.setIconSize(QtCore.QSize(32, 32))
-        self.pushButton_4.setObjectName("pushButton_4")
+        icon2.addPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/eye-slash-solid.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.btn_eye_p.setIcon(icon2)
+        self.btn_eye_p.setIconSize(QtCore.QSize(32, 32))
+        self.btn_eye_p.setObjectName("btn_eye_p")
+        self.verticalLayout.addWidget(self.frame)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.label = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(370, 0, 101, 101))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("/Users/pinxun/Documents/MindX/PTA/PTA08/BaoChau/python-app/ui/../img/ct_orange_c2c_200.jpg"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
         self.label_15.raise_()
         self.label_13.raise_()
         self.label_3.raise_()
-        self.txt_email.raise_()
         self.btn_login.raise_()
         self.label_5.raise_()
         self.pushButton_2.raise_()
         self.pushButton_3.raise_()
         self.label_7.raise_()
-        self.label.raise_()
         self.label_12.raise_()
-        self.lineEdit_2.raise_()
         self.label_10.raise_()
         self.label_25.raise_()
-        self.pushButton_5.raise_()
+        self.btn_register.raise_()
         self.label_2.raise_()
-        self.label_4.raise_()
-        self.label_6.raise_()
-        self.pushButton_4.raise_()
+        self.horizontalLayoutWidget.raise_()
+        self.label.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 850, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 849, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -203,14 +206,13 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.txt_email.setPlaceholderText(_translate("MainWindow", "Email"))
-        self.btn_login.setText(_translate("MainWindow", "Press Here "))
+        self.btn_login.setText(_translate("MainWindow", "Sign In"))
         self.label_5.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">Sign In Account</span></p></body></html>"))
         self.pushButton_2.setText(_translate("MainWindow", "Google"))
         self.pushButton_3.setText(_translate("MainWindow", "Facebook"))
         self.label_7.setText(_translate("MainWindow", "Or Create Your Account With :"))
-        self.label.setText(_translate("MainWindow", "      Hari Shop Online"))
-        self.label_12.setText(_translate("MainWindow", "-Welcome, Have a nice day !-"))
-        self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Password"))
+        self.label_12.setText(_translate("MainWindow", "-Have a nice day !-"))
         self.label_25.setText(_translate("MainWindow", "You Already Have An Account?"))
-        self.pushButton_5.setText(_translate("MainWindow", "Press Here!"))
+        self.btn_register.setText(_translate("MainWindow", "Press Here!"))
+        self.txt_email.setPlaceholderText(_translate("MainWindow", "Email"))
+        self.txt_password.setPlaceholderText(_translate("MainWindow", "Password"))
