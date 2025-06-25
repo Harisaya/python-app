@@ -404,10 +404,10 @@ background: none;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>370</x>
       <y>0</y>
-      <width>121</width>
-      <height>121</height>
+      <width>101</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">

@@ -1,8 +1,8 @@
-import os
-from PyQt6 import uic
+from PyQt6 import QtWidgets,QtCore
 from PyQt6.QtWidgets import *
-from PyQt6.QtGui import QIcon
+from PyQt6.QtGui import *
 from PyQt6.QtCore import *
+from PyQt6 import uic
 import sys
 from database import *
 
@@ -117,7 +117,6 @@ class Register(QMainWindow):
             msg.error_box("Email đã tồn tại")
             return
 
-        insert_user(name, email, password)
         msg.success_box("Đăng ký thành công")
         self.show_login()
 
@@ -146,7 +145,7 @@ class Home(QMainWindow):
         self.btn_nav_account = self.findChild(QPushButton, "btn_nav_account")
         self.btn_flash_sale = self.findChild(QPushButton, "btn_flash_sale")
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
-        self.image_button = self.findChild(QPushButton, "image_button")
+        self.image_button = self.findChild(QLabel, "image_button")
 
         self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(0))
@@ -159,12 +158,13 @@ class Home(QMainWindow):
     def navMainScreen(self, index):
         self.main_widget.setCurrentIndex(index)
 
-    def update_info(self):
+    def loadAccountInfo(self):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
 
         if self.user["avatar"]:
-            self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+            self.image_button.setPixmap(QPixmap(self.user["avatar"]))
+
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
 
@@ -188,7 +188,7 @@ class Home(QMainWindow):
             file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
             if file:
                 self.user["avatar"] = file
-                self.btn_avatar.setIcon(QIcon(file))
+                self.image_button.setPixmap(QPixmap(file))
                 update_avatar_user(self.user_id, file)
 
 if __name__ == "__main__":

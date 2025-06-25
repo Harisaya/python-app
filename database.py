@@ -37,7 +37,7 @@ def insert_user(name, email, password, gender="Không tiết lộ", avatar=""):
 def get_user_by_id(user_id):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE id = ?', (user_id,))
+    cursor.execute('SELECT id, name, email, password, gender, avatar FROM users WHERE id = ?', (user_id,))
     user = cursor.fetchone()
     conn.close()
     return user
@@ -45,7 +45,7 @@ def get_user_by_id(user_id):
 def get_user_by_email(email):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE email = ?', (email,))
+    cursor.execute('SELECT id, name, email, password, gender, avatar FROM users WHERE email = ?', (email,))
     user = cursor.fetchone()
     conn.close()
     return user
@@ -53,7 +53,7 @@ def get_user_by_email(email):
 def get_user_by_name(name):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE name = ?', (name,))
+    cursor.execute('SELECT id, name, email, password, gender, avatar FROM users WHERE name = ?', (name,))
     user = cursor.fetchone()
     conn.close()
     return user
@@ -61,7 +61,7 @@ def get_user_by_name(name):
 def get_user_by_email_and_password(email, password):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute('SELECT * FROM users WHERE email = ? AND password = ?', (email, password))
+    cursor.execute('SELECT id, name, email, password, gender, avatar FROM users WHERE email = ? AND password = ?', (email, password))
     user = cursor.fetchone()
     conn.close()
     return user

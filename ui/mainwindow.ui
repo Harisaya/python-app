@@ -1904,7 +1904,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
         </size>
        </property>
       </widget>
-      <widget class="QPushButton" name="image_button">
+      <widget class="QLabel" name="image_button">
        <property name="geometry">
         <rect>
          <x>0</x>
@@ -1913,23 +1913,18 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
          <height>111</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">border-radius: 1px</string>
-       </property>
        <property name="text">
         <string/>
        </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../img/user imgae.svg</normaloff>../img/user imgae.svg</iconset>
+       <property name="pixmap">
+        <pixmap>../img/user imgae.svg</pixmap>
        </property>
-       <property name="iconSize">
-        <size>
-         <width>100</width>
-         <height>100</height>
-        </size>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
+      <zorder>image_button</zorder>
+      <zorder>btn_avatar</zorder>
      </widget>
     </widget>
    </widget>
