@@ -1685,9 +1685,9 @@ border-radius : 10px</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>300</y>
-        <width>191</width>
-        <height>221</height>
+        <y>290</y>
+        <width>181</width>
+        <height>251</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -1761,13 +1761,20 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
         </widget>
        </item>
        <item>
-        <widget class="QDateEdit" name="txt_birthday"/>
+        <widget class="QDateEdit" name="txt_birthday">
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QFrame" name="frame">
          <property name="maximumSize">
           <size>
-           <width>200</width>
+           <width>175</width>
            <height>75</height>
           </size>
          </property>
@@ -1795,9 +1802,15 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
            <rect>
             <x>0</x>
             <y>20</y>
-            <width>181</width>
+            <width>171</width>
             <height>41</height>
            </rect>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>185</width>
+            <height>16777215</height>
+           </size>
           </property>
           <property name="editable">
            <bool>true</bool>
@@ -2054,7 +2067,7 @@ border: 2px solid #007bff; /* Viền khi đang focus (nhấp chuột vào ô) */
      <x>0</x>
      <y>0</y>
      <width>939</width>
-     <height>24</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
