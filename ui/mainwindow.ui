@@ -79,7 +79,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_18">
@@ -219,10 +219,6 @@
       <property name="text">
        <string/>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>F:/00.png</normaloff>F:/00.png</iconset>
-      </property>
       <property name="iconSize">
        <size>
         <width>120</width>
@@ -242,10 +238,6 @@
       <property name="text">
        <string/>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>F:/01.png</normaloff>F:/01.png</iconset>
-      </property>
       <property name="iconSize">
        <size>
         <width>120</width>
@@ -264,10 +256,6 @@
       </property>
       <property name="text">
        <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>F:/10.png</normaloff>F:/10.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -629,7 +617,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(149, 149, 149)</string>
       </property>
       <property name="text">
        <string/>
@@ -641,11 +629,11 @@
         <x>390</x>
         <y>100</y>
         <width>441</width>
-        <height>71</height>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255)</string>
+       <string notr="true">background-color: rgb(55, 192, 255)</string>
       </property>
       <property name="text">
        <string/>
@@ -655,7 +643,7 @@
       <property name="geometry">
        <rect>
         <x>420</x>
-        <y>250</y>
+        <y>260</y>
         <width>111</width>
         <height>31</height>
        </rect>
@@ -700,7 +688,7 @@
       <property name="geometry">
        <rect>
         <x>390</x>
-        <y>170</y>
+        <y>160</y>
         <width>441</width>
         <height>31</height>
        </rect>
@@ -735,11 +723,30 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(194, 194, 194);
+       <string notr="true">background-color: rgb(255, 255, 255);
 border-radius: 10px;</string>
       </property>
       <property name="text">
        <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="rate_star">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>200</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/nika boi.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
      <zorder>label_6</zorder>
@@ -750,6 +757,7 @@ border-radius: 10px;</string>
      <zorder>bannerLabel</zorder>
      <zorder>product_information</zorder>
      <zorder>buyItemButton</zorder>
+     <zorder>rate_star</zorder>
     </widget>
     <widget class="QWidget" name="page_3">
      <widget class="QLabel" name="label_41">
