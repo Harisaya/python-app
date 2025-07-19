@@ -119,6 +119,7 @@ class Register(QMainWindow):
             msg.error_box("Email đã tồn tại")
             return
 
+        insert_user(name, email, password)
         msg.success_box("Đăng ký thành công")
         self.show_login()
 
