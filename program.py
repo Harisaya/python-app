@@ -5,6 +5,8 @@ from PyQt6.QtCore import *
 from PyQt6 import uic
 import sys
 from database import *
+from cart_item_widget import CartItemWidget
+from pro_list_widget import ProductListWidget
 
 class MessageBox:
     def success_box(self, message):
@@ -146,16 +148,42 @@ class Home(QMainWindow):
 
         self.btn_nav_home = self.findChild(QPushButton, "btn_nav_home")
         self.btn_nav_account = self.findChild(QPushButton, "btn_nav_account")
-        self.btn_flash_sale = self.findChild(QPushButton, "btn_flash_sale")
+        self.btn_cart = self.findChild(QPushButton, "btn_cart")
         self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
         self.image_button = self.findChild(QLabel, "image_button")
         self.btn_update_info = self.findChild(QPushButton, "update_user")
 
         self.btn_avatar.clicked.connect(self.update_avatar)
-        self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(0))
-        self.btn_flash_sale.clicked.connect(lambda: self.navMainScreen(1))
-        self.btn_nav_account.clicked.connect(lambda: self.navMainScreen(2))
+        self.btn_nav_home.clicked.connect(lambda: self.navMainScreen(1))  # home is index 1
+        self.btn_cart.clicked.connect(lambda: self.navMainScreen(0))  # cart is index 0
+        self.btn_nav_account.clicked.connect(lambda: self.navMainScreen(3))  # account is index 3
         self.btn_update_info.clicked.connect(self.update_info)
+        
+        # Initialize product list widget
+        self.pro_list_widget = self.findChild(QWidget,"pro_list_widget")
+        self.product_list = ProductListWidget()
+        
+        # Create layout for pro_list_widget
+        pro_list_layout = QVBoxLayout(self.pro_list_widget)
+        pro_list_layout.setContentsMargins(0, 0, 0, 0)
+        pro_list_layout.addWidget(self.product_list)
+        
+        # Connect product list signals
+        self.product_list.product_clicked.connect(self.on_product_clicked)
+        self.product_list.product_liked.connect(self.on_product_liked)
+        self.product_list.product_buy_now.connect(self.on_product_buy_now)
+
+        # Cart widget
+        self.cart_widget = self.findChild(QWidget, "cart_widget")
+        self.cart_layout = QVBoxLayout(self.cart_widget)
+        self.cart_layout.setContentsMargins(8, 8, 8, 8)
+        self.cart_layout.setSpacing(8)
+        
+        # Connect main_widget signal to auto-load cart
+        self.main_widget.currentChanged.connect(self.on_main_window_changed)
+        
+        # Load cart initially
+        self.load_cart()
 
     def navMainScreen(self, index):
         self.main_widget.setCurrentIndex(index)
@@ -202,10 +230,176 @@ class Home(QMainWindow):
         
         update_user(self.user_id, name, email, gender, birthday, age)
         self.msg.success_box("Cập nhật thông tin thành công")
+    
+    
+    def on_product_clicked(self, product_id):
+        """Handle product card click"""
+        product = get_product_by_id(product_id)
+        if product:
+            self.fill_detail(product)
+            self.navMainScreen(2)  # Chuyển đến trang detail (index 2)
+
+    def fill_detail(self, product):
+        # Lấy widget detail (index 2)
+        detail_widget = self.main_widget.widget(2)
         
+        # Lấy các thành phần theo tên mới trong UI
+        img_label = detail_widget.findChild(QLabel, "bannerLabel")
+        title_label = detail_widget.findChild(QLabel, "product_info")
+        info_label = detail_widget.findChild(QLabel, "product_information")
+        price_label = detail_widget.findChild(QLabel, "product_price")
+        old_price_label = detail_widget.findChild(QLabel, "original_price")
+        rating_label = detail_widget.findChild(QLabel, "rate_star")
+        desc_label = detail_widget.findChild(QLabel, "product_description")
+        category_label = detail_widget.findChild(QLabel, "category_label")
+        add_btn = detail_widget.findChild(QPushButton, "addItemto_wantbuy")
+        buy_btn = detail_widget.findChild(QPushButton, "buyItemButton")
+        
+        # Helper chuyển số
+        def safe_float(val):
+            try:
+                return float(str(val).replace(",", "").strip())
+            except:
+                return 0.0
+        
+        # Ảnh sản phẩm
+        if product['Image']:
+            pixmap = QPixmap(product['Image'])
+            if not pixmap.isNull():
+                img_label.setPixmap(pixmap.scaled(img_label.size(), Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
+            else:
+                img_label.setText("Không có ảnh")
+        else:
+            img_label.setText("Không có ảnh")
+        
+        # Tên sản phẩm
+        title_label.setText(product['Name'] or product['Title'])
+        
+        # Thông tin sản phẩm
+        info_label.setText(product['Title'])
+        
+        # Giá hiện tại
+        price = safe_float(product['Price'])
+        if price > 0:
+            price_label.setText(f"₫{int(price):,}")
+        else:
+            price_label.setText("Liên hệ")
+        
+        # Giá gốc
+        original_price = safe_float(product['Original_Price'])
+        if product['Original_Price'] and original_price > price:
+            old_price_label.setText(f"₫{int(original_price):,}")
+            old_price_label.setVisible(True)
+        else:
+            old_price_label.setVisible(False)
+        
+        # Đánh giá
+        rating = safe_float(product['Rate'])
+        if rating > 0:
+            stars = "⭐" * min(5, int(rating))
+            rating_label.setText(f"{stars} {rating:.1f}")
+        else:
+            rating_label.setText("Chưa có đánh giá")
+        
+        # Mô tả
+        desc_label.setText(product['Description'] or "Không có mô tả")
+        
+        # Danh mục
+        category_label.setText(f"Danh mục: {product['Category'] or 'Không phân loại'}")
+        
+        # Kết nối nút thêm vào giỏ hàng
+        add_btn.clicked.disconnect() if add_btn.receivers(add_btn.clicked) > 0 else None
+        add_btn.clicked.connect(lambda: self.add_product_to_cart(product))
+        
+        # Kết nối nút mua ngay
+        buy_btn.clicked.disconnect() if buy_btn.receivers(buy_btn.clicked) > 0 else None
+        buy_btn.clicked.connect(lambda: self.buy_product_now(product))
+
+    def on_product_liked(self, product_id):
+        """Handle product like button click"""
+        self.msg = MessageBox()
+        self.msg.success_box(f"Đã thêm sản phẩm ID: {product_id} vào danh sách yêu thích")
+        # TODO: Add to favorites list
+    
+    def on_product_buy_now(self, product_id):
+        """Handle product buy now button click"""
+        product = get_product_by_id(product_id)
+        if product:
+            add_to_cart(self.user_id, product)
+            self.msg = MessageBox()
+            self.msg.success_box("Đã thêm vào giỏ hàng!")
+        else:
+            self.msg = MessageBox()
+            self.msg.error_box("Không tìm thấy sản phẩm")
+
+    def add_product_to_cart(self, product):
+        add_to_cart(self.user_id, product)
+        self.msg = MessageBox()
+        self.msg.success_box("Đã thêm vào giỏ hàng!")
+
+    def buy_product_now(self, product):
+        """Handle buy now button click"""
+        add_to_cart(self.user_id, product)
+        self.msg = MessageBox()
+        self.msg.success_box("Đã thêm vào giỏ hàng!")
+        # Chuyển đến trang giỏ hàng
+        self.navMainScreen(0)
+
+    def on_main_window_changed(self, index):
+        # Nếu chuyển sang tab cart (index 0), load lại cart
+        if index == 0:
+            self.load_cart()
+
+    def load_cart(self):
+        """Load cart items from database and display them"""
+        # Clear existing widgets
+        while self.cart_layout.count():
+            item = self.cart_layout.takeAt(0)
+            w = item.widget()
+            if w:
+                w.deleteLater()
+        
+        # Get cart items from database
+        cart_items = get_cart_by_user(self.user_id)
+        
+        if not cart_items:
+            # Show empty cart message
+            empty_label = QLabel("Giỏ hàng trống")
+            empty_label.setStyleSheet("""
+                QLabel {
+                    font-family: Arial, sans-serif;
+                    font-size: 16px;
+                    color: #6c757d;
+                    padding: 20px;
+                    text-align: center;
+                }
+            """)
+            empty_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            self.cart_layout.addWidget(empty_label)
+        else:
+            # Create cart item widgets
+            for item in cart_items:
+                cart_widget = CartItemWidget(item)
+                cart_widget.remove_clicked.connect(lambda pid, uid=self.user_id: self.remove_cart_item(uid, pid))
+                cart_widget.buy_now_clicked.connect(lambda pid: self.buy_cart_item(pid))
+                self.cart_layout.addWidget(cart_widget)
+        
+        # Add stretch to push items to top
+        self.cart_layout.addStretch()
+
+    def remove_cart_item(self, user_id, product_id):
+        remove_from_cart(user_id, product_id)
+        self.load_cart()
+    
+    def buy_cart_item(self, product_id):
+        """Handle buy now button click from cart item"""
+        self.msg = MessageBox()
+        self.msg.success_box(f"Đang xử lý mua sản phẩm ID: {product_id}")
+        # TODO: Implement checkout process - for now just show message   
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
+    login = Home(2)
     login.show()
     sys.exit(app.exec())
