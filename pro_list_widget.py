@@ -1,4 +1,4 @@
-import sys
+import sys #ds san pham
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QGridLayout, 
                              QScrollArea, QFrame, QApplication)
 from PyQt6.QtCore import Qt, pyqtSignal
@@ -7,7 +7,7 @@ from product_item_widget import ProductCard
 import database
 
 
-class ProductListWidget(QWidget):
+class ProductListWidget(QWidget): #ds san pham
     """
     Scrollable widget that displays a grid of product cards
     """
